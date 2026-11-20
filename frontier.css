@@ -1,8 +1,7 @@
-/* Frontier with Microsoft design tokens v1.0, Nov 2026. Shared by the front door, The Hub, storyboards, the Brief and the Coach. */
 
 :root{--navy:#081628;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--off:#f6f7f9;--d365:#002050;--agent:#6d28d9;--cowork:#0e7490;--teal-l:#67e8f9;--bg:#fff}
 @media (prefers-color-scheme:dark){:root{--bg:#fff}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}[id]{scroll-margin-top:76px}
 body{margin:0;font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Carlito,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px}
 h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI",Carlito,Arial,sans-serif;font-weight:600;letter-spacing:-.01em}
 .bar{position:sticky;top:0;z-index:9;background:rgba(8,22,40,.97);display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding-block:10px;padding-inline:24px}
@@ -45,7 +44,7 @@ details p,details li{font-size:15px}details ul{padding-inline-start:20px;margin-
 .chip{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:999px;padding-block:6px;padding-inline:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
 .chip i{width:10px;height:10px;border-radius:50%;display:inline-block}
 .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.tiles{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.tiles{display:grid;gap:16px;grid-template-columns:repeat(5,1fr)}@media (max-width:1000px){.tiles{grid-template-columns:repeat(2,1fr)}}@media (max-width:520px){.tiles{grid-template-columns:1fr}}
 .tile{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:6px;border-block-start-width:4px}
 .tile b{font-size:17px}.tile small{color:var(--muted);font-size:13px}
 .tri{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -54,7 +53,7 @@ details p,details li{font-size:15px}details ul{padding-inline-start:20px;margin-
 .layer p{margin-block:12px 0;color:var(--muted)}
 .door{border-radius:16px;padding:24px;background:#fff;border:1px solid var(--line);border-block-start:6px solid;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:8px;min-height:220px}
 .door h3{font-size:26px;margin:0}.door p{margin:0;color:var(--muted)}.door .go{margin-block-start:auto;font-weight:700}
-footer{background:var(--navy);color:#94a3b8;font-size:13px;padding-block:28px}
-
-/* Industry colors */
-:root{--ind-all-industries:#c2410c;--ind-hospitality:#0e7490;--ind-manufacturing:#a16207;--ind-high-tech:#6d28d9;--ind-telecom:#a21caf;--ind-healthcare:#0f766e;--ind-financial-services:#1d4ed8;--ind-retail:#be123c;--ind-energy:#15803d;--ind-professional-services:#475569;--ind-state-local-and-education:#0369a1;--ind-federal:#1e3a8a;--ind-defense:#4d7c0f;}
+footer{background:var(--navy);color:#94a3b8;font-size:13px;padding-block:28px}footer a{color:#e2e8f0}.flinks{display:flex;gap:16px;flex-wrap:wrap;margin-block-end:10px}
+.pi{display:inline-block;width:18px;height:18px;background-size:contain;background-repeat:no-repeat;background-position:center;flex:none}.sh .pi{width:32px;height:32px}.layer .lh .pi{width:28px;height:28px}
+.box{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:20px;font-family:Consolas,monospace;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere}
+.chk{counter-reset:c;list-style:none;padding:0;display:grid;gap:8px}.chk li{counter-increment:c;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}.chk li::before{content:counter(c)". ";font-weight:700;color:var(--cowork)}

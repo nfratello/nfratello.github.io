@@ -1,0 +1,178 @@
+{
+  "library": "Frontier icon library",
+  "version": "1.1",
+  "updated": "2026-11-20",
+  "rule": "Only these icons. Name beside every icon. Never change or redraw. No icon: use the name as text.",
+  "icons": [
+    {
+      "product": "Dynamics 365",
+      "file": "icons/Dynamics365_scalable.png",
+      "svg": "icons/Dynamics365_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Contact Center",
+      "file": "icons/ContactCenter_scalable.png",
+      "svg": "icons/ContactCenter_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Customer Service",
+      "file": "icons/CustomerService_scalable.png",
+      "svg": "icons/CustomerService_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Sales",
+      "file": "icons/Sales_scalable.png",
+      "svg": "icons/Sales_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Finance",
+      "file": "icons/Finance_scalable.png",
+      "svg": "icons/Finance_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Supply Chain Management",
+      "file": "icons/SupplyChainManagement_scalable.png",
+      "svg": "icons/SupplyChainManagement_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Business Central",
+      "file": "icons/BusinessCentral_scalable.png",
+      "svg": "icons/BusinessCentral_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Field Service",
+      "file": "icons/FieldService_scalable.png",
+      "svg": "icons/FieldService_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Dynamics 365 Project Operations",
+      "file": "icons/ProjectOperations_scalable.png",
+      "svg": "icons/ProjectOperations_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
+      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
+      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Microsoft Copilot Studio",
+      "file": "icons/CopilotStudio_scalable.png",
+      "svg": "icons/CopilotStudio_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Microsoft Agent 365",
+      "file": "icons/Agent365_scalable.png",
+      "svg": "icons/Agent365_scalable.svg",
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Microsoft permits the use of these icons in architectural diagrams, training materials, or documentation. You may copy, distribute, and display the icons only for the permitted use unless granted explicit permission by Microsoft. Microsoft reserves all other rights.",
+      "last_checked": "2026-11-20",
+      "status": "in library"
+    },
+    {
+      "product": "Power Platform",
+      "file": null,
+      "svg": null,
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Architecture diagrams, training materials and documentation. Name close to the icon. No crop, flip, rotate or distortion.",
+      "last_checked": "2026-11-20",
+      "status": "to download"
+    },
+    {
+      "product": "Power Apps",
+      "file": null,
+      "svg": null,
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Architecture diagrams, training materials and documentation. Name close to the icon. No crop, flip, rotate or distortion.",
+      "last_checked": "2026-11-20",
+      "status": "to download"
+    },
+    {
+      "product": "Power Automate",
+      "file": null,
+      "svg": null,
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Architecture diagrams, training materials and documentation. Name close to the icon. No crop, flip, rotate or distortion.",
+      "last_checked": "2026-11-20",
+      "status": "to download"
+    },
+    {
+      "product": "Power BI",
+      "file": null,
+      "svg": null,
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Architecture diagrams, training materials and documentation. Name close to the icon. No crop, flip, rotate or distortion.",
+      "last_checked": "2026-11-20",
+      "status": "to download"
+    },
+    {
+      "product": "Dataverse",
+      "file": null,
+      "svg": null,
+      "source": "https://learn.microsoft.com/en-us/power-platform/guidance/icons",
+      "pack": "Power Platform icons, Microsoft Learn (December 2025 update)",
+      "terms": "Architecture diagrams, training materials and documentation. Name close to the icon. No crop, flip, rotate or distortion.",
+      "last_checked": "2026-11-20",
+      "status": "to download"
+    },
+    {
+      "product": "Microsoft 365 Copilot (Copilot Cowork)",
+      "file": null,
+      "svg": null,
+      "source": null,
+      "pack": "Official source with usage terms still to be found",
+      "terms": null,
+      "last_checked": "2026-11-20",
+      "status": "name as text until sourced"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Frontier with Microsoft design tokens",
+  "version": "1.1",
+  "updated": "2026-11-20",
+  "font": "\"Segoe Sans Text\",\"Segoe UI Variable Text\",\"Segoe UI\",Carlito,Arial,sans-serif",
+  "font_display": "\"Segoe Sans Display\",\"Segoe UI Variable Display\",\"Segoe UI\",Carlito,Arial,sans-serif",
+  "colors": {
+    "navy": "#081628",
+    "ink": "#0f172a",
+    "muted": "#475569",
+    "line": "#e2e8f0",
+    "off": "#f6f7f9",
+    "white": "#ffffff",
+    "d365": "#002050",
+    "agent": "#6d28d9",
+    "cowork": "#0e7490",
+    "teal_l": "#67e8f9",
+    "brief": "#c2410c",
+    "hub": "#0e7490",
+    "coach": "#6d28d9"
+  },
+  "industry_colors": {
+    "All Industries": "#c2410c",
+    "Hospitality": "#0e7490",
+    "Manufacturing": "#a16207",
+    "High Tech": "#6d28d9",
+    "Telecom": "#a21caf",
+    "Healthcare": "#0f766e",
+    "Financial Services": "#1d4ed8",
+    "Retail": "#be123c",
+    "Energy": "#15803d",
+    "Professional Services": "#475569",
+    "State, Local and Education": "#0369a1"
+  },
+  "spacing_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "card": {
+    "radius_px": 16,
+    "padding_px": 24
+  },
+  "section_padding_px": 56,
+  "hero": {
+    "photo": "right 62 percent, max 1060 px, cover",
+    "fade": "linear-gradient(90deg,#081628 0%,#081628 40%,rgba(8,22,40,.72) 55%,rgba(8,22,40,0) 80%)",
+    "mobile": "under 760 px: photo full width at 0.45 opacity"
+  },
+  "microsoft_logo": {
+    "colors": [
+      "#f25022",
+      "#7fba00",
+      "#00a4ef",
+      "#ffb900"
+    ],
+    "min_px": 16,
+    "placement": "upper left of the top bar"
+  }
+}
