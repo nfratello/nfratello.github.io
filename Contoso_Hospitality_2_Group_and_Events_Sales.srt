@@ -1,0 +1,52 @@
+1
+00:00:00,050 --> 00:00:05,150
+Contoso Hospitality. Group and events sales, with Cowork and Dynamics 365.
+
+2
+00:00:05,300 --> 00:00:10,665
+Eight a.m. An RFP for a three-hundred-person sales kickoff lands in the group sales inbox.
+
+3
+00:00:10,665 --> 00:00:17,400
+An intake agent reads it and creates the opportunity in Dynamics 365 Sales, with the dates, room block and space.
+
+4
+00:00:17,550 --> 00:00:20,938
+Group sales manager Kevin Tran asks Cowork to build the proposal.
+
+5
+00:00:20,938 --> 00:00:26,777
+Cowork checks space, weighs the group against expected demand, and drafts it from past events and pricing rules.
+
+6
+00:00:26,777 --> 00:00:28,810
+He reviews it and sends it before nine.
+
+7
+00:00:28,960 --> 00:00:33,054
+That afternoon, Kevin walks the ballroom with the planner, Denise Carter.
+
+8
+00:00:33,054 --> 00:00:37,820
+She signs, and the contract, deposit and attrition terms are tracked in Dynamics 365.
+
+9
+00:00:37,970 --> 00:00:39,652
+Event week, the changes fly.
+
+10
+00:00:39,652 --> 00:00:45,720
+Events manager Rosa Alvarez keeps every update in one place, and Cowork tells each team what changed.
+
+11
+00:00:45,870 --> 00:00:54,430
+At checkout, Cowork lines up the master bill in Dynamics 365 Finance against every event order, and flags two differences before Denise ever sees them.
+
+12
+00:00:54,580 --> 00:00:57,405
+From RFP to cash, without weeks of back and forth.
+
+13
+00:00:57,405 --> 00:01:01,868
+Dynamics runs the deal, agents do the intake, and Cowork helps the team decide.
+

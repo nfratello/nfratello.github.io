@@ -1,0 +1,56 @@
+1
+00:00:00,050 --> 00:00:05,860
+Contoso Hospitality. Procure-to-pay and prime cost, with Cowork and Dynamics 365.
+
+2
+00:00:06,010 --> 00:00:08,185
+Six thirty a.m. at the receiving dock.
+
+3
+00:00:08,185 --> 00:00:16,485
+Chef Marco Russo and food and beverage director Sofia Bianchi check the seafood delivery against the purchase order in Dynamics 365 Supply Chain.
+
+4
+00:00:16,485 --> 00:00:17,630
+Two cases are short.
+
+5
+00:00:17,780 --> 00:00:21,995
+By nine, an invoice agent has matched orders, receipts and invoices.
+
+6
+00:00:21,995 --> 00:00:23,482
+Most clear on their own.
+
+7
+00:00:23,482 --> 00:00:29,990
+Accounts payable lead Grace Kim sees only the exceptions in Dynamics 365 Finance, each with its evidence.
+
+8
+00:00:30,140 --> 00:00:34,396
+Grace asks Cowork to explain the seafood exception and draft the supplier note.
+
+9
+00:00:34,396 --> 00:00:35,850
+One review, and it is sent.
+
+10
+00:00:36,000 --> 00:00:40,659
+Monday, eight a.m. General manager Tom Wallace opens his prime cost dashboard in Cowork:
+
+11
+00:00:40,659 --> 00:00:45,000
+food and labor cost by outlet, the biggest variances, and three suggested actions.
+
+12
+00:00:45,150 --> 00:00:49,700
+Sofia approves new par levels, and Dynamics updates the next orders.
+
+13
+00:00:49,850 --> 00:00:51,858
+Cost control while it still matters.
+
+14
+00:00:51,858 --> 00:00:57,212
+Dynamics runs the transaction, agents match the paper, and Cowork shows leaders what to do next.
+

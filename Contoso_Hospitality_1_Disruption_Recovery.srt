@@ -1,0 +1,56 @@
+1
+00:00:00,050 --> 00:00:05,210
+Contoso Hospitality. Disruption recovery, with Cowork and Dynamics 365.
+
+2
+00:00:05,360 --> 00:00:10,528
+Six forty p.m. A storm closes the airport. Duty manager Amara Okafor opens Cowork.
+
+3
+00:00:10,528 --> 00:00:11,914
+Her briefing is ready:
+
+4
+00:00:11,914 --> 00:00:16,200
+two hundred twelve arrivals at risk, and forty-eight rooms oversold.
+
+5
+00:00:16,350 --> 00:00:18,142
+She asks for a recovery plan.
+
+6
+00:00:18,142 --> 00:00:24,940
+Cowork reads the guest records and loyalty tiers in Dynamics 365, and returns a plan she approves in one step.
+
+7
+00:00:25,090 --> 00:00:29,651
+The guest agent, running in Dynamics 365 Contact Center, reaches every guest.
+
+8
+00:00:29,651 --> 00:00:35,160
+Daniel, stuck at the gate, taps once to extend his stay, and the booking updates in Dynamics.
+
+9
+00:00:35,310 --> 00:00:36,608
+Nine guests need a person.
+
+10
+00:00:36,608 --> 00:00:40,600
+Customer Service routes each case to Mei at the front desk, with the full story.
+
+11
+00:00:40,750 --> 00:00:46,060
+Revenue manager Priya Shah sees the stranded demand in Cowork, and moves tomorrow's rates tonight.
+
+12
+00:00:46,210 --> 00:00:52,630
+By seven a.m., CEO Elena Marquez has the recovery cost, guest sentiment, and an updated playbook.
+
+13
+00:00:52,780 --> 00:00:57,824
+Dynamics runs the transaction. Agents do the work. Cowork is where people decide.
+
+14
+00:00:57,824 --> 00:00:59,132
+Hours become minutes.
+
