@@ -1,0 +1,132 @@
+<!-- Scout-ready copy of the Frontier with Microsoft design standards instructions.
+     Owner: Nick Fratello. Paste into Scout or point Scout at this file. -->
+
+# Frontier with Microsoft Design Standards
+
+Build and review content for the public "Frontier with Microsoft" sites so it matches the published design standards, and hand back a pass or fail report on the 14-point checklist.
+
+## When to Use
+
+- Building or reviewing a page, storyboard, scenario card, video, or app mockup for Frontier with Microsoft
+- Content for the front door (https://nfratello.github.io/), The Hub (/intelligent-business-process/), The Brief (/microsoft-brief/), The Coach (inside The Brief), or the Design standards page (/style-guide/)
+- "Check this against the Frontier design standards", "is this on-brand for The Hub?", "make a Frontier storyboard"
+
+Audience: Nick Fratello's peers on Ted Kempf's team (for example Justin Raphael and Grant) and their agents.
+
+## When NOT to Use
+
+- General Microsoft brand, internal slide decks, Word documents, or emails not destined for the Frontier sites
+- Publishing or deploying to the Frontier sites: contributors never publish directly; work goes to Nick Fratello for review
+- Editing the source standards themselves (that is Nick's job)
+
+## Source of Truth (read first; these win on any conflict)
+
+Fetch and read these before building or reviewing anything:
+
+1. https://nfratello.github.io/design-standards.md (plain-text standards, version 1.1, updated November 20, 2026)
+2. https://nfratello.github.io/frontier-tokens.json (colors, fonts, spacing, hero)
+3. https://nfratello.github.io/frontier.css
+4. https://nfratello.github.io/icons/icons.json (icon library)
+
+If a published file disagrees with the summary in this skill, the published file wins. If a URL is not reachable, use the summary below and say so in the report (name the file that could not be read).
+
+## Workflow
+
+1. **Read the sources.** Fetch and read the four files above. Note the standards version and date. Record any file that failed to load.
+2. **Build with the tokens and CSS only.** Use colors, fonts, spacing, radii and hero values from `frontier-tokens.json` and the classes in `frontier.css`. Never invent new colors, sizes or spacing. If a value you need is missing, use the nearest token and flag it in the report.
+3. **Pull icons only from `icons.json`.** Use the official icon file it points to, unchanged. If a product has no entry, write the product name as plain text. Never generate, redraw, recolor, crop, flip or rotate an icon.
+4. **Ground labels in Microsoft Learn.** Check every product name and on-screen label against current Microsoft Learn wording (learn.microsoft.com). For each product screen, record its source (Contoso demo screenshot, or the official screenshot it recreates) and the last-checked date.
+5. **Run the 14-point checklist** (below). Report pass or fail for every item, with a one-line reason for each fail.
+6. **Hand back, do not publish.** Deliver the work and the checklist report to the requester, ready to hand to Nick Fratello for review. Never push, commit or upload to the Frontier sites.
+
+## Standards Summary (stable; the source files win on conflict)
+
+### The 12 rules
+
+1. **Canvas:** white and off-white sections with small pops of color; navy only for the top bar, hero and footer.
+2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
+3. **Colors per page:** neutrals, navy and one site or industry color; no more than three colors working together.
+4. **Industry colors:** accents only (label, 4 px rule, tile edge, chip dot), never a full background, always shown with the industry name.
+5. **Type:** Segoe Sans stack falling back to Segoe UI; three sizes per page (headline 34 to 56, section head 26 to 34, body 17); small-capital labels above headlines.
+6. **Logo:** Microsoft four-square logo upper left of the top bar, at least 16 px, clear space equal to its height.
+7. **Product icons:** wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon beside the name; body sentences stay plain text.
+8. **Icon library only:** official Microsoft Learn icon packs, never changed, cropped, recolored, redrawn or generated; no official icon means the name as text.
+9. **Spacing:** 4 px grid (4, 8, 12, 16, 24, 32, 48, 64); cards have 16 px corners and 24 px padding; sections 56 px.
+10. **Photos:** real industry scenes, faces visible, screens facing their users, natural light.
+11. **Product screens:** show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots with real labels and controls; flat and straight on; each screen lists its source and last-checked date.
+12. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
+
+### Colors
+
+| Role | Name | Hex |
+|------|------|-----|
+| Neutral | Navy | #081628 |
+| Neutral | Ink | #0f172a |
+| Neutral | Muted | #475569 |
+| Neutral | Line | #e2e8f0 |
+| Neutral | Off-white | #f6f7f9 |
+| Layer | Dynamics 365 | #002050 |
+| Layer | Agents | #6d28d9 |
+| Layer | Copilot Cowork | #0e7490 |
+| Site | The Brief | #c2410c |
+| Site | The Hub | #0e7490 |
+| Site | The Coach | #6d28d9 |
+
+Industry accents (all pass at least 4.5 to 1 on white): Hospitality #0e7490, Manufacturing #a16207, High Tech #6d28d9, Telecom #a21caf, Healthcare #0f766e, Financial Services #1d4ed8, Retail #be123c, Energy #15803d, Professional Services #475569, State, Local and Education #0369a1.
+
+### Top bar
+
+Four-square logo, "Frontier with Microsoft", "The Brief", "The Hub", "The Coach", and nothing else. "Design standards" is a footer link, not a top-bar item.
+
+### The 14-point checklist
+
+1. Text contrast at least 4.5 to 1
+2. No more than three colors working together
+3. Hero uses the navy fade from the left with the photo on the right
+4. Every product named in a chip, label, header, card or table has its library icon beside it, or plain text if none
+5. No icon cropped, flipped, rotated, recolored, redrawn or generated
+6. Product names and screen labels match current Microsoft Learn wording
+7. Every product screen is a real screenshot or an exact recreation, with source and last-checked date
+8. Only Contoso and other Microsoft fictional company names
+9. No emoji or arrow symbols
+10. Segoe Sans stack, no more than three type sizes per page
+11. 4 px spacing grid, 16 px card corners
+12. Top bar shows only the four-square and the four site names
+13. Reads well at 390 px phone width
+14. Footer says Contoso is fictional and when labels were last checked
+
+## Output Format
+
+Return the work, then this report:
+
+```
+Frontier design check — {item name}
+Standards: design-standards.md v{version}, {date} (or: "not reachable, used skill summary")
+Sources unreachable: {list or "none"}
+
+| # | Check | Result | Reason (fails only) |
+|---|-------|--------|---------------------|
+| 1 | Text contrast >= 4.5:1 | PASS | |
+| ... (all 14 rows) |
+
+Screens: {screen} — source: {Contoso demo / official screenshot URL}, last checked {date}
+Next step: hand to Nick Fratello for review (not published).
+```
+
+## Guardrails
+
+- Read the source files first; they win over this skill on any conflict. Say when one could not be read.
+- Never invent colors, sizes, spacing or icons; use the tokens, CSS and icon library only.
+- Never publish, push or upload to the Frontier sites; hand work to Nick Fratello for review.
+- Never use real customer or partner company names on public pages; use Contoso and other Microsoft fictional names.
+- Never fabricate product screens or labels; if a real screenshot or exact recreation is not possible, say so and leave a labeled placeholder.
+- Report every checklist item honestly; never mark an item PASS you did not check.
+
+## Common Issues
+
+| Issue | Fix |
+|-------|-----|
+| A source URL returns 404 | Use the summary above, note the missing file in the report |
+| Product has no entry in icons.json | Write the product name as plain text, no icon |
+| Need a fourth color | Drop it; use neutrals, navy and one site or industry color |
+| Industry color wanted as a background | Use it as a label, 4 px rule, tile edge or chip dot instead |
