@@ -4,7 +4,21 @@
 <meta charset="utf-8">
 <title>Frontier icon library</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
+<style>/* ---- Share line (Design standards v1.5) ----- */
+.fw-bar{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#6b7280;white-space:nowrap;line-height:1}
+.fw-bar .fwdiv{display:inline-block;width:1px;align-self:stretch;min-height:16px;background:#d1d5db}
+.fw-bar .fwt{display:inline-flex;align-items:center;gap:5px}
+.fw-bar .fwt img{width:14px;height:14px;display:block}
+.fw-bar button.aka{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;margin:0;font:inherit;font-size:13px;color:#6b7280;cursor:pointer}
+.fw-bar button.aka svg{width:12px;height:12px;flex:none}
+.fw-bar button.aka:hover,.fw-bar button.aka:focus-visible{color:#0f172a;text-decoration:underline;outline:none}
+.fw-bar button.aka.done{color:#15803d;text-decoration:none}
+.gh .gnav .fw-bar{margin-inline-start:2px}
+.gh .gmenu nav .fw-bar{display:flex;width:100%;padding-block:10px 12px;margin-block-end:4px;border-block-end:1px solid #e5e7eb}
+footer .fw-bar{display:flex;margin-block-start:14px}
+@media (max-width:760px){.gh .gnav .fw-bar{display:none}}
+@media print{.fw-bar{display:none}}
+h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
 p,li,figcaption,blockquote,q{text-wrap:pretty}
 
   body{font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#0f172a;margin:0;padding:32px}
@@ -165,7 +179,7 @@ p,li,figcaption,blockquote,q{text-wrap:pretty}
     </tr>
     </tbody>
   </table>
-  <footer><a href="../style-guide/">Back to Design standards</a></footer>
+  <footer><a href="../style-guide/">Back to Design standards</a><span class="fw-bar"><span class="fwdiv" aria-hidden="true"></span><span class="fwt">Built with Copilot <img src="MicrosoftCopilot.png" alt="" width="14" height="14"></span><span aria-hidden="true">|</span><button type="button" class="aka" data-url="https://aka.ms/TheFrontierHub" aria-label="Copy link https://aka.ms/TheFrontierHub" title="https://aka.ms/TheFrontierHub"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg><span class="akl" aria-live="polite">aka.ms/TheFrontierHub</span></button></span></footer>
 </div>
-</body>
+<script src="../share-line.js" defer></script></body>
 </html>

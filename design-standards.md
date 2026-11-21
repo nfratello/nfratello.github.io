@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 1.4, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 1.5, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -28,6 +28,19 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
 - **Copilot + Dynamics 365 lockup.** White rounded box (14 px radius, 12 px 20 px padding), each icon at 32 px beside its name in 20 px semibold dark text, grey "+" between. A 1 px #e2e8f0 border on white backgrounds; no border when the box sits on navy. Use it once per page, near the top. Never alter the icons or the order.
 - **Naming.** "Industry Editions" (both words capitalized) is the label for the 10 industry editions of The Brief, in navigation, buttons and section headings. In a running sentence use lowercase: "industry edition" / "industry editions". The Executive version is not an industry edition.
 - **No orphans.** No single word may sit alone on its own last line in any heading, lede, button or card title. Apply `text-wrap:balance` to headings/buttons/card titles and `text-wrap:pretty` to body paragraphs, lists and captions as a baseline, then join the last two words with `&nbsp;` wherever a short heading still breaks down to a one-word final line (roughly 24 characters or fewer combined). Never join across a UI badge/chip (e.g. a status pill) glued to the end of a heading — badges are not part of the heading's own last line.
+- **Share line.** A discreet "Built with Copilot | aka.ms/&lt;link&gt;" line, far right of row 1 after Subscribe on desktop, after a 1 px #d1d5db divider, in small grey text (13 px, #6b7280), no box. "Built with Copilot" is plain text with the Microsoft Copilot icon (14 px), never a link. The `aka.ms/<link>` text is a real button: clicking copies the full `https://aka.ms/<link>` URL to the clipboard and shows "Copied" for 1.5 seconds (`aria-live="polite"`); keyboard accessible (Enter and Space, since it is a native `<button>`); if the clipboard is blocked, the link text is selected instead so the user can copy manually; hover shows the full link via `title`. On phones (under 760 px) the line is hidden from row 1 and instead appears at the top of the Menu panel and in the page footer. One share line per page, always pointing at that page's own site/section link (never a different site's link), and never in a styled box. Page-to-link table:
+
+  | Page(s) | Link |
+  |---|---|
+  | Front door (Frontier_Home.html, index.html) | aka.ms/TheFrontierHub |
+  | The Hub (Intelligent_Business_Process_Hub.html, the storyboard) | aka.ms/BusinessProcessHub |
+  | Dynamics 365 skills page | aka.ms/Dynamics365Skills |
+  | Design standards and icon library pages | aka.ms/TheFrontierHub |
+  | The Brief (all Brief pages except below) | aka.ms/MicrosoftBrief |
+  | The Coach pages | aka.ms/CopilotCoach |
+  | Convergence page | aka.ms/ConvergenceBrief |
+  | Ignite event page | aka.ms/IgniteBrief |
+  | Ignite recap page | aka.ms/MicrosoftIgniteRecap |
 - **Product icons.** Wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon right beside the name. Body sentences stay plain text.
 - **Icon library.** Use only icons from the Frontier icon library. Official Microsoft Learn packs, never changed, cropped, recolored or redrawn. No official icon yet: show the name as text.
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.

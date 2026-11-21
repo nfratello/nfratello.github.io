@@ -3,7 +3,7 @@
 
 # Frontier with Microsoft Design Standards
 
-Build and review content for the public "Frontier with Microsoft" sites so it matches the published design standards, and hand back a pass or fail report on the 16-point checklist.
+Build and review content for the public "Frontier with Microsoft" sites so it matches the published design standards, and hand back a pass or fail report on the 17-point checklist.
 
 ## When to Use
 
@@ -41,7 +41,7 @@ If a published file disagrees with the summary in this skill, the published file
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 16 rules
+### The 17 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -59,6 +59,7 @@ If a published file disagrees with the summary in this skill, the published file
 14. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
 15. **Naming:** "Industry Editions" (both words capitalized) is the label for the 10 industry editions of The Brief, in navigation, buttons and section headings. In a running sentence use lowercase: "industry edition" / "industry editions". The Executive version is not an industry edition.
 16. **No orphans:** no single word may sit alone on its own last line in any heading, lede, button or card title. Apply `text-wrap:balance` to headings/buttons/card titles and `text-wrap:pretty` to body paragraphs, lists and captions as a baseline, then join the last two words with `&nbsp;` wherever a short heading still breaks down to a one-word final line (roughly 24 characters or fewer combined). Never join across a UI badge/chip glued to the end of a heading.
+17. **Share line:** a discreet "Built with Copilot | aka.ms/&lt;link&gt;" line, far right of row 1 after Subscribe on desktop (1 px #d1d5db divider, 13 px #6b7280 text, no box), with "Built with Copilot" as plain text plus the Microsoft Copilot icon (14 px) and `aka.ms/<link>` as a real button that copies the full URL and shows "Copied" for 1.5 seconds (`aria-live="polite"`, keyboard accessible). On phones it moves to the top of the Menu panel and the footer only. One share line per page, always that page's own site/section link.
 
 ### Colors
 
