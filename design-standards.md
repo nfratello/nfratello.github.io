@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 1.5, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 1.6, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -41,6 +41,7 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
   | Convergence page | aka.ms/ConvergenceBrief |
   | Ignite event page | aka.ms/IgniteBrief |
   | Ignite recap page | aka.ms/MicrosoftIgniteRecap |
+- **One page width.** One shared width token, `--page-max: 1240px`, with `--page-pad: 28px` side padding (16px under 760 px). Row 1 content, row 2 content, the hero text and every page section's content sit inside that same centered container so their left edges line up: the Microsoft logo, the row 2 title and the hero eyebrow all start at the same x position, and Subscribe / the share line end at the same right edge as page content. Backgrounds stay full width — the white row 1, the light grey row 2, the color strip and the navy hero still run edge to edge; only the content inside is constrained. Row 2 keeps sideways scrolling on phones. A page that deliberately uses a wider full-bleed element (video, image band, a scoped promo strip) may leave that one element full bleed.
 - **Product icons.** Wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon right beside the name. Body sentences stay plain text.
 - **Icon library.** Use only icons from the Frontier icon library. Official Microsoft Learn packs, never changed, cropped, recolored or redrawn. No official icon yet: show the name as text.
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.

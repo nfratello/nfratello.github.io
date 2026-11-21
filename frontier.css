@@ -1,5 +1,5 @@
 
-:root{--navy:#081628;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--off:#f6f7f9;--d365:#002050;--agent:#6d28d9;--cowork:#0e7490;--teal-l:#67e8f9;--bg:#fff}
+:root{--navy:#081628;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--off:#f6f7f9;--d365:#002050;--agent:#6d28d9;--cowork:#0e7490;--teal-l:#67e8f9;--bg:#fff;--page-max:1240px;--page-pad:28px}
 h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
 p,li,figcaption,blockquote,q{text-wrap:pretty}
 /* ---- Share line (Design standards v1.5) ----- */
@@ -30,7 +30,8 @@ h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI"
 .hero .fade{position:absolute;inset:0;background:linear-gradient(90deg,#081628 0%,#081628 40%,rgba(8,22,40,.72) 55%,rgba(8,22,40,0) 80%)}
 .hero .in{position:relative;padding-block:88px 64px}
 @media (max-width:760px){.hero img.ph{width:100%;opacity:.45}.hero .fade{background:linear-gradient(90deg,#081628 0%,rgba(8,22,40,.75) 100%)}.hero .in{padding-block:56px 44px}}
-.in{max-width:1180px;margin:0 auto;padding-inline:24px}
+.in{max-width:var(--page-max);margin:0 auto;padding-inline:var(--page-pad)}
+@media (max-width:760px){.in{padding-inline:16px}}
 .eb{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .hero .eb{color:var(--teal-l)}
 h1{font-size:clamp(34px,5.6vw,56px);line-height:1.05;margin-block:12px 16px;max-width:620px}
@@ -75,7 +76,7 @@ footer{background:var(--navy);color:#94a3b8;font-size:13px;padding-block:28px}fo
 .chk{counter-reset:c;list-style:none;padding:0;display:grid;gap:8px}.chk li{counter-increment:c;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}.chk li::before{content:counter(c)". ";font-weight:700;color:var(--cowork)}
 /* v0.5 unified header (Design standards v1.2) */
 .gh{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid #e0e0e0}
-.ghr{display:flex;align-items:center;height:60px;padding-inline:28px;max-width:1440px;margin:0 auto}
+.ghr{display:flex;align-items:center;height:60px;padding-inline:var(--page-pad);max-width:var(--page-max);margin:0 auto}
 .gh .lock{display:flex;align-items:center;gap:14px;text-decoration:none;color:#242424}
 .gh .mslogo{display:inline-flex;align-items:center;gap:8px}
 .gh img.mslogo{display:block;height:20px;width:auto}
@@ -94,11 +95,12 @@ footer{background:var(--navy);color:#94a3b8;font-size:13px;padding-block:28px}fo
 .gh .gmenu nav{position:absolute;inset-inline-end:0;top:44px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:flex;flex-direction:column;min-width:200px;padding-block:6px}
 .gh .gmenu nav a{padding-block:10px;border-bottom:0}.gh .gmenu nav a.on{font-weight:600;color:#0e7490}
 .gh .gmenu nav a.cta{margin:8px 12px;text-align:center;color:#fff}
-.gh .lb{display:flex;align-items:center;gap:22px;height:44px;padding-inline:28px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;overflow-x:auto;white-space:nowrap;max-width:none}
+.gh .lb{display:block;height:44px;background:#fafafa;border-top:1px solid #e0e0e0;font-size:14px;max-width:none}
+.gh .lb .lbw{display:flex;align-items:center;gap:22px;height:44px;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--page-pad);overflow-x:auto;white-space:nowrap}
 .gh .lb a{color:#616161;text-decoration:none}.gh .lb a:hover{color:#242424;text-decoration:underline}
 .gh .lb .lbt{color:#242424;font-weight:700;font-size:15px;text-decoration:none}
 .gh .lb b{color:#242424}
 .gh .lb,.gh .ghr:last-child{position:relative}
 .mstrip{display:block;block-size:4px;background:linear-gradient(90deg,#f25022 0 25%,#7fba00 25% 50%,#00a4ef 50% 75%,#ffb900 75% 100%)}
-@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb{padding-inline:16px;gap:16px}}
+@media (max-width:760px){.gh .gnav{display:none}.gh .gmenu{display:block}.ghr{padding-inline:16px;height:56px}.gh .mswm{font-size:17px}.gh .site{font-size:16px}.gh .lock{gap:10px}.gh .lb .lbw{padding-inline:16px;gap:16px}}
 @media print{.gh{position:static}.gh .gnav,.gh .gmenu,.gh .lb,.mstrip{display:none}}

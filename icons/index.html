@@ -21,8 +21,9 @@ footer .fw-bar{display:flex;margin-block-start:14px}
 h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
 p,li,figcaption,blockquote,q{text-wrap:pretty}
 
+  :root{--page-max:1240px;--page-pad:28px}
   body{font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#0f172a;margin:0;padding:32px}
-  .in{max-width:960px;margin:0 auto}
+  .in{max-width:var(--page-max);margin:0 auto}
   h1{font-size:28px;margin-block-end:4px}
   p.sub{color:#475569;margin-block-start:0}
   table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}

@@ -1,9 +1,14 @@
 {
   "name": "Frontier with Microsoft design tokens",
-  "version": "1.2",
+  "version": "1.3",
   "updated": "2026-11-21",
   "font": "\"Segoe Sans Text\",\"Segoe UI Variable Text\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "font_display": "\"Segoe Sans Display\",\"Segoe UI Variable Display\",\"Segoe UI\",Carlito,Arial,sans-serif",
+  "pageMax": 1240,
+  "pagePad": {
+    "default": 28,
+    "mobile": 16
+  },
   "colors": {
     "navy": "#081628",
     "ink": "#0f172a",
