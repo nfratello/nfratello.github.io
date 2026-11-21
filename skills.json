@@ -1,0 +1,331 @@
+{
+ "version": "0.1",
+ "checked_on": "2026-11-21",
+ "phase": "1: Sell and Serve",
+ "headline_counts": [
+  {
+   "label": "CRM skills across the Sales and Customer Service plugins",
+   "value": "57+",
+   "source": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/"
+  },
+  {
+   "label": "ERP skills in the Dynamics 365 ERP apps plugin (coming in phase 2)",
+   "value": "39+",
+   "source": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/"
+  }
+ ],
+ "sources": {
+  "learn_sales": "https://learn.microsoft.com/en-us/dynamics365/sales/use-copilot-cowork-sales-skills",
+  "learn_service": "https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-cowork-service-skills",
+  "blog_oct8": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/10/08/bring-microsoft-dynamics-365-into-the-flow-of-work-with-30-new-crm-skills/",
+  "blog_cowork_roles": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-cowork-expanded-plugins-and-role-based-skills/4566221"
+ },
+ "groups": [
+  {
+   "id": "sell",
+   "name": "Sell",
+   "persona": "Jordan, account manager at Contoso",
+   "team_persona": "Priya, sales manager at Contoso",
+   "icon": "d365-sales",
+   "product": "Dynamics 365 Sales",
+   "chain": [
+    "Pipeline prioritizer",
+    "Deal rescue",
+    "Customer engagement strategy"
+   ],
+   "chain_source": "blog_oct8"
+  },
+  {
+   "id": "serve",
+   "name": "Serve",
+   "persona": "Sam, service representative at Contoso",
+   "icon": "d365-customer-service",
+   "product": "Dynamics 365 Customer Service",
+   "chain": [
+    "Case triage",
+    "Answer research",
+    "Draft customer reply"
+   ],
+   "chain_source": "blog_oct8"
+  }
+ ],
+ "skills": [
+  {
+   "g": "sell",
+   "name": "Pipeline prioritizer",
+   "what": "Ranks open opportunities by value, urgency, risk and momentum, with the reason to work each one next.",
+   "who": "me",
+   "prompt": "Review my open opportunities for this week and give me a ranked worklist with the evidence and next action for each.",
+   "viz": "rank",
+   "d365": false,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Deal rescue",
+   "what": "Investigates a stalled or at-risk opportunity and recommends how to get it moving.",
+   "who": "me",
+   "prompt": "The Fabrikam renewal has gone quiet for three weeks. Find out why it stalled and what I should do next.",
+   "viz": "risk",
+   "d365": true,
+   "cowork": false,
+   "src": "blog_oct8",
+   "note": "Named by Microsoft on Oct 8, 2026; not yet in the Learn skills table."
+  },
+  {
+   "g": "sell",
+   "name": "Customer engagement strategy",
+   "what": "Builds a 30-day plan for who to engage at an account, why they matter and how to reach them.",
+   "who": "me",
+   "prompt": "Build a 30-day engagement strategy for Fabrikam around their expansion project. Who should I meet, in what order, and why?",
+   "viz": "plan",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Meeting preparation",
+   "what": "Pulls account, opportunity and activity context together before a customer meeting.",
+   "who": "me",
+   "prompt": "Prepare me for tomorrow's meeting with Fabrikam: who is attending, what changed and what they will ask.",
+   "viz": "brief",
+   "d365": true,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Post-meeting follow-up",
+   "what": "Captures decisions, owners and dates, proposes record updates and drafts the customer follow-up for review.",
+   "who": "me",
+   "prompt": "After today's Fabrikam meeting, capture decisions and owners, propose record changes and draft a follow-up for my review.",
+   "viz": "email",
+   "d365": true,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Deal catch-up",
+   "what": "Shows what changed across deals since a date you choose, separating customer movement from record housekeeping.",
+   "who": "me",
+   "prompt": "What changed across my active deals since last Monday? Separate customer movement from CRM updates.",
+   "viz": "changes",
+   "d365": true,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Competitive strategy",
+   "what": "Tailors positioning and objection responses to a deal using approved competitor evidence.",
+   "who": "me",
+   "prompt": "Help me position against our main competitor on the Fabrikam deal. Flag any claim that needs checking.",
+   "viz": "compare",
+   "d365": true,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Business case composer",
+   "what": "Builds a decision-ready business case from the customer's own evidence and flags missing inputs.",
+   "who": "me",
+   "prompt": "Draft a business case for Fabrikam's expansion using what they told us, and list what we still need from them.",
+   "viz": "doc",
+   "d365": true,
+   "cowork": true,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Deal desk",
+   "what": "Gets support, guidance and escalation for complex or at-risk opportunities, including product and pricing configuration.",
+   "who": "me",
+   "prompt": "Prepare a deal desk request for Fabrikam: the configuration they want, the discount asked and the approvals needed.",
+   "viz": "checklist",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Stage advance readiness",
+   "what": "Checks a deal against your stage criteria. It assesses readiness; it does not move the stage.",
+   "who": "me",
+   "prompt": "Is the Fabrikam opportunity ready to move to Propose? Show what is confirmed and what is missing.",
+   "viz": "checklist",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Reconcile my opportunity",
+   "what": "Compares recent customer conversations with the opportunity record and proposes field updates for you to approve.",
+   "who": "me",
+   "prompt": "Compare my last three Fabrikam emails and meetings with the opportunity and propose any field updates.",
+   "viz": "changes",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Draft outreach",
+   "what": "Writes personalized customer emails and outreach for review.",
+   "who": "me",
+   "prompt": "Draft a short note to Fabrikam's new finance director introducing our team and suggesting a call.",
+   "viz": "email",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "CRM data hygiene",
+   "what": "Finds and fixes data quality issues in your CRM records.",
+   "who": "me",
+   "prompt": "Find my opportunities with missing close dates, stale stages or no next step, and propose fixes.",
+   "viz": "checklist",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Sales Research Agent",
+   "what": "Researches accounts, competitors and market trends, including pipeline and forecast analysis.",
+   "who": "me",
+   "prompt": "Why did our win rate in the mid-market segment drop this quarter?",
+   "viz": "chart",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Segment analysis",
+   "what": "Analyzes customer segments to find patterns and opportunities.",
+   "who": "team",
+   "prompt": "Which customer segments grew fastest this year, and where are we under-covered?",
+   "viz": "chart",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Executive deal review",
+   "what": "Prepares an executive summary of critical deals and pipeline status.",
+   "who": "team",
+   "prompt": "Prepare a one-page review of our top ten deals for Thursday's leadership meeting.",
+   "viz": "doc",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Forecast rollup",
+   "what": "Consolidates and checks forecast numbers across the team.",
+   "who": "team",
+   "prompt": "Roll up my team's forecast for the quarter and flag deals where the forecast and the evidence disagree.",
+   "viz": "chart",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Team pipeline review",
+   "what": "Analyzes team pipeline health, velocity and forecast accuracy.",
+   "who": "team",
+   "prompt": "How healthy is my team's pipeline for next quarter? Show coverage, velocity and the biggest gaps.",
+   "viz": "chart",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "sell",
+   "name": "Team activity coaching",
+   "what": "Reviews team activity and suggests coaching on the work, not the person.",
+   "who": "team",
+   "prompt": "Which of my team's deals have gone without customer contact for two weeks, and what coaching would help?",
+   "viz": "rank",
+   "d365": true,
+   "cowork": false,
+   "src": "learn_sales"
+  },
+  {
+   "g": "serve",
+   "name": "Case triage",
+   "what": "Orders open cases by deadline, customer impact, commitments and unanswered messages, with the reasons.",
+   "who": "me",
+   "prompt": "Review my escalated cases and give me a prioritized worklist with the reasons for the order.",
+   "viz": "rank",
+   "d365": true,
+   "cowork": true,
+   "src": "blog_cowork_roles"
+  },
+  {
+   "g": "serve",
+   "name": "Case preparation brief",
+   "what": "Summarizes one case before the next interaction: status, history, what was tried and open commitments.",
+   "who": "me",
+   "prompt": "Give me a one-screen brief on case 12345: customer, product, history and prior cases.",
+   "viz": "brief",
+   "d365": true,
+   "cowork": true,
+   "src": "blog_cowork_roles"
+  },
+  {
+   "g": "serve",
+   "name": "Answer research",
+   "what": "Researches a source-backed answer from verified knowledge and similar cases, and flags conflicting or thin evidence.",
+   "who": "me",
+   "prompt": "Find the answer to this customer's warranty question from our knowledge articles and similar cases, with sources.",
+   "viz": "sources",
+   "d365": true,
+   "cowork": true,
+   "src": "blog_cowork_roles"
+  },
+  {
+   "g": "serve",
+   "name": "Draft customer reply",
+   "what": "Drafts a reply grounded in verified case facts and policy, and leaves it as a draft for review.",
+   "who": "me",
+   "prompt": "Draft my reply to the customer on case 12345 using the matching knowledge article. Leave it for my review.",
+   "viz": "email",
+   "d365": true,
+   "cowork": true,
+   "src": "blog_cowork_roles"
+  },
+  {
+   "g": "serve",
+   "name": "Knowledge harvest",
+   "what": "Turns a verified fix into reusable guidance with customer details removed, and checks for duplicate articles.",
+   "who": "me",
+   "prompt": "Turn the fix on case 12345 into a draft knowledge article: symptom, cause, workaround and verified fix.",
+   "viz": "doc",
+   "d365": null,
+   "cowork": true,
+   "src": "blog_cowork_roles"
+  },
+  {
+   "g": "serve",
+   "name": "Customer brief and value metrics",
+   "what": "Brings unified customer context and KPIs into a sales or service conversation.",
+   "who": "me",
+   "prompt": "Give me a customer brief for Fabrikam with their open cases, satisfaction trend and contract value.",
+   "viz": "kpi",
+   "d365": true,
+   "cowork": false,
+   "src": "blog_oct8",
+   "note": "Named by Microsoft on Oct 8, 2026; works across sales and service."
+  }
+ ]
+}
