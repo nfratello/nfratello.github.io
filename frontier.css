@@ -1,5 +1,7 @@
 
 :root{--navy:#081628;--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--off:#f6f7f9;--d365:#002050;--agent:#6d28d9;--cowork:#0e7490;--teal-l:#67e8f9;--bg:#fff}
+h1,h2,h3,h4,.eb,.lede,.card h3,.btn,button{text-wrap:balance}
+p,li,figcaption,blockquote,q{text-wrap:pretty}
 @media (prefers-color-scheme:dark){:root{--bg:#fff}}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}[id]{scroll-margin-top:76px}
 body{margin:0;font-family:"Segoe Sans Text","Segoe UI Variable Text","Segoe UI",Carlito,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px}
