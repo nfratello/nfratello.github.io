@@ -1,6 +1,6 @@
 {
   "name": "Frontier with Microsoft design tokens",
-  "version": "1.3",
+  "version": "1.4",
   "updated": "2026-11-21",
   "font": "\"Segoe Sans Text\",\"Segoe UI Variable Text\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "font_display": "\"Segoe Sans Display\",\"Segoe UI Variable Display\",\"Segoe UI\",Carlito,Arial,sans-serif",
@@ -9,6 +9,10 @@
     "default": 28,
     "mobile": 16
   },
+  "journeyA": { "place": "Home", "from": "#0ea5e9", "to": "#2563eb" },
+  "journeyB": { "place": "The Brief", "from": "#2563eb", "to": "#6366f1" },
+  "journeyC": { "place": "The Hub", "from": "#6366f1", "to": "#a855f7" },
+  "journeyD": { "place": "The Coach", "from": "#a855f7", "to": "#db2777" },
   "colors": {
     "navy": "#081628",
     "ink": "#0f172a",
