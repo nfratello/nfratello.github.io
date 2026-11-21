@@ -41,7 +41,7 @@ If a published file disagrees with the summary in this skill, the published file
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 14 rules
+### The 15 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -57,6 +57,7 @@ If a published file disagrees with the summary in this skill, the published file
 12. **Photos:** real industry scenes, faces visible, screens facing their users, natural light.
 13. **Product screens:** show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots with real labels and controls; flat and straight on; each screen lists its source and last-checked date.
 14. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
+15. **Naming:** "Industry Editions" (both words capitalized) is the label for the 10 industry editions of The Brief, in navigation, buttons and section headings. In a running sentence use lowercase: "industry edition" / "industry editions". The Executive version is not an industry edition.
 
 ### Colors
 
