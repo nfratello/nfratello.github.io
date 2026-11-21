@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 1.7, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 1.8, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -48,6 +48,7 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.
 - **Photos.** Real industry scenes, faces visible, screens facing the people using them, natural light, uncluttered.
 - **Product screens.** Show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots, with real labels and controls. Flat and straight on, never angled or stacked. Each screen lists its source and last-checked date.
+- **Imagery and video — Product icons on every app screen.** Any app window shown in an image, mockup or video carries the official product icon in its title bar: Cowork icon for Cowork, the specific Dynamics 365 app icon (Contact Center, Customer Service, Sales, Finance, Supply Chain Management and so on) for Dynamics 365 screens, and the Copilot Studio icon on agent labels. Product chips and footers use the icon plus name. Icons come only from the Frontier icon library. Never use the Microsoft 365 Copilot icon; the brand is Microsoft Copilot.
 - **Words.** Plain sentences. Product name first, then what it does. No emoji or arrows. Contoso and other Microsoft fictional names only on public pages.
 
 ## Colors
@@ -91,6 +92,7 @@ Industry colors (accents only, always with the industry name):
 12. The header matches the v1.3 header rules: Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach and Subscribe on the right with the current section underlined; a section row with the section's own links; the Microsoft color strip under the sub header; the Copilot + Dynamics 365 lockup used once per page, near the top.
 13. The page reads well at phone width (390 px).
 14. The footer says Contoso is fictional and when labels were last checked.
+15. Every app screen shows its product icon.
 
 ## Header (v1.3, every page)
 One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
