@@ -23,7 +23,7 @@ Audience: Nick Fratello's peers on Ted Kempf's team (for example Justin Raphael 
 
 Fetch and read these before building or reviewing anything:
 
-1. https://nfratello.github.io/design-standards.md (plain-text standards, version 1.1, updated November 20, 2026)
+1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 1.2, updated November 20, 2026)
 2. https://nfratello.github.io/frontier-tokens.json (colors, fonts, spacing, hero)
 3. https://nfratello.github.io/frontier.css
 4. https://nfratello.github.io/icons/icons.json (icon library)
@@ -43,12 +43,12 @@ If a published file disagrees with the summary in this skill, the published file
 
 ### The 12 rules
 
-1. **Canvas:** white and off-white sections with small pops of color; navy only for the top bar, hero and footer.
+1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
 3. **Colors per page:** neutrals, navy and one site or industry color; no more than three colors working together.
 4. **Industry colors:** accents only (label, 4 px rule, tile edge, chip dot), never a full background, always shown with the industry name.
 5. **Type:** Segoe Sans stack falling back to Segoe UI; three sizes per page (headline 34 to 56, section head 26 to 34, body 17); small-capital labels above headlines.
-6. **Logo:** Microsoft four-square logo upper left of the top bar, at least 16 px, clear space equal to its height.
+6. **Logo:** full Microsoft logo (official file) upper left of the white header, then a divider and Becoming Frontier; clear space equal to the four-square height.
 7. **Product icons:** wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon beside the name; body sentences stay plain text.
 8. **Icon library only:** official Microsoft Learn icon packs, never changed, cropped, recolored, redrawn or generated; no official icon means the name as text.
 9. **Spacing:** 4 px grid (4, 8, 12, 16, 24, 32, 48, 64); cards have 16 px corners and 24 px padding; sections 56 px.
@@ -74,9 +74,15 @@ If a published file disagrees with the summary in this skill, the published file
 
 Industry accents (all pass at least 4.5 to 1 on white): Hospitality #0e7490, Manufacturing #a16207, High Tech #6d28d9, Telecom #a21caf, Healthcare #0f766e, Financial Services #1d4ed8, Retail #be123c, Energy #15803d, Professional Services #475569, State, Local and Education #0369a1.
 
-### Top bar
-
-Four-square logo, "Frontier with Microsoft", "The Brief", "The Hub", "The Coach", and nothing else. "Design standards" is a footer link, not a top-bar item.
+### Header (v1.2, every page)
+One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
+1. White bar, 60 px tall (56 px on phones), thin bottom border #e0e0e0, sticky at the top.
+2. Left: the full Microsoft logo (four-square and wordmark, official file), a 1 px divider #bdbdbd, then "Becoming Frontier" (18 px, semibold, #242424). The lockup links to the front door.
+3. Right-aligned: The Brief, The Hub, The Coach (15 px, #242424), then a navy Subscribe button (#081628). The current section has a 3 px Frontier teal underline (#0e7490). Nothing else in this row.
+4. Section row under it (44 px, #fafafa): the section name in bold, then that section's own links. The front door has no section row.
+5. Phones: lockup plus a Menu button that opens the same links; the section row scrolls sideways.
+6. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
+7. Email editions of the Brief keep their own email-safe header.
 
 ### The 14-point checklist
 
@@ -91,7 +97,7 @@ Four-square logo, "Frontier with Microsoft", "The Brief", "The Hub", "The Coach"
 9. No emoji or arrow symbols
 10. Segoe Sans stack, no more than three type sizes per page
 11. 4 px spacing grid, 16 px card corners
-12. Top bar shows only the four-square and the four site names
+12. Header matches the v1.2 header rules (Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach, Subscribe; section row)
 13. Reads well at 390 px phone width
 14. Footer says Contoso is fictional and when labels were last checked
 
