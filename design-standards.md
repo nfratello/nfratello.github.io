@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 1.2, updated November 20, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 1.3, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -9,7 +9,7 @@ Icon library: https://nfratello.github.io/icons/icons.json
 
 ## Use with your agent
 
-Follow the Frontier with Microsoft Design Standards v1.2 for everything you build.
+Follow the Frontier with Microsoft Design Standards v1.3 for everything you build.
 1. Read https://nfratello.github.io/style-guide/ and https://nfratello.github.io/design-standards.md before you start.
 2. Use the colors, fonts and spacing in https://nfratello.github.io/frontier-tokens.json and the styles in https://nfratello.github.io/frontier.css. Do not invent new ones.
 3. Use product icons only from the Frontier icon library listed in https://nfratello.github.io/icons/icons.json. Put the icon beside the product name every time a product is named in a chip, label, header, card or table. If the library has no icon, use the name as text.
@@ -24,6 +24,7 @@ Follow the Frontier with Microsoft Design Standards v1.2 for everything you buil
 - **Industry colors.** Accents only: the label, a 4 px rule, a tile edge, a chip dot. Never a full background. Always show the industry name next to the color.
 - **Type.** Segoe Sans, falling back to Segoe UI. Three sizes per page: headline (34 to 56), section head (26 to 34), body (17). Labels in small capitals above headlines.
 - **Microsoft logo.** Full Microsoft logo (four-square and wordmark, official file) at the upper left of the white header, then a divider, then Becoming Frontier. Clear space equal to the four-square height.
+- **Header.** Microsoft color strip, 4 px, under the sub header, four equal parts #f25022 #7fba00 #00a4ef #ffb900, decoration only, never recolored or reordered, never used anywhere else on the page.
 - **Product icons.** Wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon right beside the name. Body sentences stay plain text.
 - **Icon library.** Use only icons from the Frontier icon library. Official Microsoft Learn packs, never changed, cropped, recolored or redrawn. No official icon yet: show the name as text.
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.
@@ -40,6 +41,7 @@ Follow the Frontier with Microsoft Design Standards v1.2 for everything you buil
 - Dynamics 365 layer: #002050 (System of record)
 - Agent layer: #6d28d9 (Agents)
 - Cowork layer: #0e7490 (Copilot Cowork)
+- Microsoft color strip: #f25022 #7fba00 #00a4ef #ffb900 (4 px, under the sub header, decoration only)
 
 Industry colors (accents only, always with the industry name):
 
@@ -68,16 +70,17 @@ Industry colors (accents only, always with the industry name):
 9. No emoji or arrow symbols anywhere.
 10. Fonts follow the Segoe Sans stack, with no more than three sizes per page.
 11. Spacing follows the 4 px grid; cards use 16 px corners.
-12. The header matches the v1.2 header rules: Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach and Subscribe on the right with the current section underlined; a section row with the section's own links.
+12. The header matches the v1.3 header rules: Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach and Subscribe on the right with the current section underlined; a section row with the section's own links; the Microsoft color strip under the sub header.
 13. The page reads well at phone width (390 px).
 14. The footer says Contoso is fictional and when labels were last checked.
 
-## Header (v1.2, every page)
+## Header (v1.3, every page)
 One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
 1. White bar, 60 px tall (56 px on phones), thin bottom border #e0e0e0, sticky at the top.
 2. Left: the full Microsoft logo (four-square and wordmark, official file), a 1 px divider #bdbdbd, then "Becoming Frontier" (18 px, semibold, #242424). The lockup links to the front door.
 3. Right-aligned: The Brief, The Hub, The Coach (15 px, #242424), then a navy Subscribe button (#081628). The current section has a 3 px Frontier teal underline (#0e7490). Nothing else in this row.
 4. Section row under it (44 px, #fafafa): the section name in bold, then that section's own links. The front door has no section row.
-5. Phones: lockup plus a Menu button that opens the same links; the section row scrolls sideways.
-6. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
-7. Email editions of the Brief keep their own email-safe header.
+5. Microsoft color strip: a 4 px strip, full width, along the bottom edge of the section row (or the bottom of row 1 on pages with no section row), in four equal parts left to right: #f25022, #7fba00, #00a4ef, #ffb900 (the Microsoft logo colors). Decoration only: no text, aria-hidden, not clickable, stays with the sticky header. Never recolored, reordered or used anywhere else on the page. Use once per header.
+6. Phones: lockup plus a Menu button that opens the same links; the section row scrolls sideways.
+7. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
+8. Email editions of the Brief keep their own email-safe header.

@@ -1,7 +1,7 @@
 {
   "name": "Frontier with Microsoft design tokens",
-  "version": "1.1",
-  "updated": "2026-11-20",
+  "version": "1.2",
+  "updated": "2026-11-21",
   "font": "\"Segoe Sans Text\",\"Segoe UI Variable Text\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "font_display": "\"Segoe Sans Display\",\"Segoe UI Variable Display\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "colors": {
@@ -61,5 +61,16 @@
     ],
     "min_px": 16,
     "placement": "upper left of the top bar"
+  },
+  "msStrip": {
+    "colors": [
+      "#f25022",
+      "#7fba00",
+      "#00a4ef",
+      "#ffb900"
+    ],
+    "height_px": 4,
+    "placement": "full width, bottom edge of the sub header (or bottom of row 1 on pages with no sub header), equal quarters left to right",
+    "decoration_only": true
   }
 }
