@@ -1,17 +1,17 @@
 {
   "library": "Frontier icon library",
-  "version": "1.1",
-  "updated": "2026-11-20",
+  "version": "1.2",
+  "updated": "2026-11-21",
   "rule": "Only these icons. Name beside every icon. Never change or redraw. No icon: use the name as text.",
   "icons": [
     {
       "product": "Dynamics 365",
-      "file": "icons/Dynamics365_scalable.png",
+      "file": "icons/Dynamics365-ProductFamily.png",
       "svg": "icons/Dynamics365_scalable.svg",
-      "source": "https://learn.microsoft.com/en-us/dynamics365/get-started/icons",
-      "pack": "Dynamics 365 icons, Microsoft Learn (November 2024 pack)",
-      "terms": "Architecture diagrams, training materials and documentation. Name beside the icon. No crop, flip, rotate or distortion. Never to represent our own product.",
-      "last_checked": "2026-11-20",
+      "source": "Nick Fratello 2026 logo set (README: https://learn.microsoft.com/en-us/dynamics365/get-started/icons)",
+      "pack": "2026 logos for Scout, standardized PNG, transparent background, 512x512 canvas",
+      "terms": "Microsoft permits use of these icons in architectural diagrams, training materials, or documentation. Do not crop, flip, rotate or distort, and do not use to represent a non-Microsoft product or service.",
+      "last_checked": "2026-11-21",
       "status": "in library"
     },
     {
@@ -165,14 +165,34 @@
       "status": "to download"
     },
     {
-      "product": "Microsoft Copilot (Copilot Cowork)",
-      "file": null,
+      "product": "Microsoft Copilot",
+      "file": "icons/MicrosoftCopilot.png",
       "svg": null,
-      "source": null,
-      "pack": "Official source with usage terms still to be found",
-      "terms": null,
-      "last_checked": "2026-11-20",
-      "status": "name as text until sourced"
+      "source": "Nick Fratello 2026 logo set (README: official Microsoft brand/marketing CDN asset)",
+      "pack": "2026 logos for Scout, standardized PNG, transparent background, 512x512 canvas",
+      "terms": "Microsoft permits use of these icons in architectural diagrams, training materials, or documentation. Do not crop, flip, rotate or distort, and do not use to represent a non-Microsoft product or service.",
+      "last_checked": "2026-11-21",
+      "status": "in library"
+    },
+    {
+      "product": "Copilot Cowork",
+      "file": "icons/CopilotCowork.png",
+      "svg": null,
+      "source": "Nick Fratello 2026 logo set (README: official Microsoft Learn icon download); background removed and glyph rescaled 2026-11-10, accepted by Nick 2026-11-21",
+      "pack": "2026 logos for Scout, standardized PNG, transparent background, 512x512 canvas",
+      "terms": "Microsoft permits use of these icons in architectural diagrams, training materials, or documentation. Do not crop, flip, rotate or distort, and do not use to represent a non-Microsoft product or service.",
+      "last_checked": "2026-11-21",
+      "status": "in library"
+    },
+    {
+      "product": "Microsoft logo",
+      "file": "icons/microsoft-logo-full.svg",
+      "svg": "icons/microsoft-logo-full.svg",
+      "source": "Nick Fratello 2026 logo set (README: official Microsoft square/wordmark logo mark)",
+      "pack": "2026 logos for Scout, vector wordmark",
+      "terms": "Microsoft permits use of these icons in architectural diagrams, training materials, or documentation. Do not crop, flip, rotate or distort, and do not use to represent a non-Microsoft product or service.",
+      "last_checked": "2026-11-21",
+      "status": "in library"
     }
   ]
 }

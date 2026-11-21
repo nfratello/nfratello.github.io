@@ -41,7 +41,7 @@ If a published file disagrees with the summary in this skill, the published file
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 13 rules
+### The 14 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -50,12 +50,13 @@ If a published file disagrees with the summary in this skill, the published file
 5. **Type:** Segoe Sans stack falling back to Segoe UI; three sizes per page (headline 34 to 56, section head 26 to 34, body 17); small-capital labels above headlines.
 6. **Logo:** full Microsoft logo (official file) upper left of the white header, then a divider and Becoming Frontier; clear space equal to the four-square height.
 7. **Header:** Microsoft color strip, 4 px, under the sub header, four equal parts #f25022 #7fba00 #00a4ef #ffb900, decoration only, never recolored or reordered, never used anywhere else on the page.
-8. **Product icons:** wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon beside the name; body sentences stay plain text.
-9. **Icon library only:** official Microsoft Learn icon packs, never changed, cropped, recolored, redrawn or generated; no official icon means the name as text.
-10. **Spacing:** 4 px grid (4, 8, 12, 16, 24, 32, 48, 64); cards have 16 px corners and 24 px padding; sections 56 px.
-11. **Photos:** real industry scenes, faces visible, screens facing their users, natural light.
-12. **Product screens:** show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots with real labels and controls; flat and straight on; each screen lists its source and last-checked date.
-13. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
+8. **Copilot + Dynamics 365 lockup:** white rounded box (14 px radius, 12 px 20 px padding), each icon at 32 px beside its name in 20 px semibold dark text, grey "+" between. A 1 px #e2e8f0 border on white backgrounds; no border when the box sits on navy. Use it once per page, near the top. Never alter the icons or the order.
+9. **Product icons:** wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon beside the name; body sentences stay plain text.
+10. **Icon library only:** official Microsoft Learn icon packs, never changed, cropped, recolored, redrawn or generated; no official icon means the name as text.
+11. **Spacing:** 4 px grid (4, 8, 12, 16, 24, 32, 48, 64); cards have 16 px corners and 24 px padding; sections 56 px.
+12. **Photos:** real industry scenes, faces visible, screens facing their users, natural light.
+13. **Product screens:** show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots with real labels and controls; flat and straight on; each screen lists its source and last-checked date.
+14. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
 
 ### Colors
 
@@ -100,7 +101,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 9. No emoji or arrow symbols
 10. Segoe Sans stack, no more than three type sizes per page
 11. 4 px spacing grid, 16 px card corners
-12. Header matches the v1.3 header rules (Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach, Subscribe; section row; Microsoft color strip)
+12. Header matches the v1.3 header rules (Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach, Subscribe; section row; Microsoft color strip); Copilot + Dynamics 365 lockup used once per page, near the top
 13. Reads well at 390 px phone width
 14. Footer says Contoso is fictional and when labels were last checked
 

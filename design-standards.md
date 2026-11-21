@@ -25,6 +25,7 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
 - **Type.** Segoe Sans, falling back to Segoe UI. Three sizes per page: headline (34 to 56), section head (26 to 34), body (17). Labels in small capitals above headlines.
 - **Microsoft logo.** Full Microsoft logo (four-square and wordmark, official file) at the upper left of the white header, then a divider, then Becoming Frontier. Clear space equal to the four-square height.
 - **Header.** Microsoft color strip, 4 px, under the sub header, four equal parts #f25022 #7fba00 #00a4ef #ffb900, decoration only, never recolored or reordered, never used anywhere else on the page.
+- **Copilot + Dynamics 365 lockup.** White rounded box (14 px radius, 12 px 20 px padding), each icon at 32 px beside its name in 20 px semibold dark text, grey "+" between. A 1 px #e2e8f0 border on white backgrounds; no border when the box sits on navy. Use it once per page, near the top. Never alter the icons or the order.
 - **Product icons.** Wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon right beside the name. Body sentences stay plain text.
 - **Icon library.** Use only icons from the Frontier icon library. Official Microsoft Learn packs, never changed, cropped, recolored or redrawn. No official icon yet: show the name as text.
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.
@@ -70,7 +71,7 @@ Industry colors (accents only, always with the industry name):
 9. No emoji or arrow symbols anywhere.
 10. Fonts follow the Segoe Sans stack, with no more than three sizes per page.
 11. Spacing follows the 4 px grid; cards use 16 px corners.
-12. The header matches the v1.3 header rules: Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach and Subscribe on the right with the current section underlined; a section row with the section's own links; the Microsoft color strip under the sub header.
+12. The header matches the v1.3 header rules: Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach and Subscribe on the right with the current section underlined; a section row with the section's own links; the Microsoft color strip under the sub header; the Copilot + Dynamics 365 lockup used once per page, near the top.
 13. The page reads well at phone width (390 px).
 14. The footer says Contoso is fictional and when labels were last checked.
 
