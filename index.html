@@ -9,7 +9,8 @@
 .fw-bar button.aka.done{color:#107c41;text-decoration:none}
 footer .fw-bar button.aka:hover,footer .fw-bar button.aka:focus-visible{color:#50e6ff}
 footer .fw-bar button.aka.done{color:#6ee7a8}
-.gh .gnav .fw-bar{margin-inline-start:2px}
+.gh .gnav .fw-bar{margin-inline-start:32px}
+@media (min-width:1960px){.gh .gnav .fw-bar{position:fixed;top:30px;right:48px;transform:translateY(-50%);margin:0;z-index:31}}
 .gh .gmenu nav .fw-bar{display:flex;width:100%;padding-block:10px 12px;margin-block-end:4px;border-block-end:1px solid #e5e7eb}
 footer .fw-bar{display:flex;margin-block-start:14px}
 @media (max-width:760px){.gh .gnav .fw-bar{display:none}}
@@ -28,11 +29,11 @@ h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI"
 .bar a.nav{color:#cbd5e1;text-decoration:none;font-size:14px;padding-block:6px;padding-inline:12px;border-radius:999px}
 .bar a.nav:hover,.bar a.on{background:rgba(103,232,249,.16);color:#fff}
 .hero{position:relative;min-height:500px;background:var(--navy);color:#fff;overflow:hidden}
-.hero .phwrap{position:absolute;inset-block:0;inset-inline-end:0;width:44%;max-width:600px;height:100%;overflow:hidden}
-.hero img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 35%}
-.hero .phwrap .fade{position:absolute;inset:0;background:linear-gradient(90deg,#081628 0%,rgba(8,22,40,.85) 12%,rgba(8,22,40,0) 32%)}
+.hero .phwrap{position:absolute;inset-block:0;inset-inline-start:calc(max(0px,(100% - var(--page-max)) / 2) + var(--page-pad) + 764px + 40px);inset-inline-end:0;width:auto;max-width:none;height:100%;overflow:hidden}
+.hero img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% 30%}
+.hero .phwrap .fade{position:absolute;inset:0;background:linear-gradient(90deg,#081628 0%,rgba(8,22,40,.85) 6%,rgba(8,22,40,0) 14%)}
 .hero .in{position:relative;padding-block:88px 64px}
-@media (max-width:1099px){
+@media (max-width:1500px){
   .hero{display:flex;flex-direction:column}
   .hero .phwrap{position:static;order:-1;width:100%;max-width:none;height:auto;aspect-ratio:16/9}
   .hero img.ph{position:static;width:100%;height:100%;object-position:68% 38%}
