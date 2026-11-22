@@ -33,9 +33,9 @@ h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI"
 .hero .in{position:relative;padding-block:88px 64px}
 @media (max-width:760px){.hero img.ph{width:100%;opacity:.45}.hero .fade{background:linear-gradient(90deg,#081628 0%,rgba(8,22,40,.75) 100%)}.hero .in{padding-block:56px 44px}}
 .gtext{background:linear-gradient(90deg,#38bdf8 0%,#60a5fa 25%,#818cf8 50%,#c084fc 75%,#f472b6 100%);-webkit-background-clip:text;background-clip:text;color:#93c5fd;-webkit-text-fill-color:transparent}
-.jny{position:relative;margin-block-start:40px;display:flex;align-items:flex-start;gap:0}
+.jny{position:relative;margin-block-start:40px;display:flex;align-items:flex-start;gap:24px}
 .jline{position:absolute;top:24px;height:2px;background:linear-gradient(90deg,#2563eb,#6366f1,#a855f7,#db2777);z-index:0}
-.jp{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-decoration:none;color:#fff;min-width:0}
+.jp{position:relative;z-index:1;flex:0 0 220px;width:220px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-decoration:none;color:#fff;min-width:0}
 .jpill{display:inline-flex;align-items:center;justify-content:center;min-width:132px;height:48px;padding-inline:20px;border-radius:999px;font-size:16px;font-weight:700;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.35);transition:transform .15s ease;text-align:center}
 .jp:hover .jpill,.jp:focus-visible .jpill{transform:translateY(-2px)}
 .jp:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:999px}
@@ -49,7 +49,7 @@ h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI"
 @media (max-width:760px){
   .jny{flex-direction:column;gap:28px;padding-inline-start:24px}
   .jline{top:0;bottom:24px;left:24px;right:auto;width:2px;height:auto;background:linear-gradient(180deg,#2563eb,#6366f1,#a855f7,#db2777)}
-  .jp{flex-direction:row;align-items:center;gap:16px;padding-inline-start:0;margin-inline-start:-24px}
+  .jp{flex-direction:row;align-items:center;gap:16px;padding-inline-start:0;margin-inline-start:-24px;flex-basis:auto;width:auto}
   .jpill{min-width:110px;flex:none}
   .jlab,.jsub,.jhere{margin-inline-start:0}
   .jp>span:not(.jpill){display:block}
