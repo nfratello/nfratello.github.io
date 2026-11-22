@@ -23,7 +23,7 @@ Audience: Nick Fratello's peers on Ted Kempf's team (for example Justin Raphael 
 
 Fetch and read these before building or reviewing anything:
 
-1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 2.0, updated November 21, 2026)
+1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 2.1, updated November 21, 2026)
 2. https://nfratello.github.io/frontier-tokens.json (colors, fonts, spacing, hero)
 3. https://nfratello.github.io/frontier.css
 4. https://nfratello.github.io/icons/icons.json (icon library)
@@ -41,7 +41,7 @@ If a published file disagrees with the summary in this skill, the published file
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 21 rules
+### The 22 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -57,13 +57,14 @@ If a published file disagrees with the summary in this skill, the published file
 12. **Photos:** real industry scenes, faces visible, screens facing their users, natural light.
 13. **Product screens:** show what is real. Real screenshots from a Contoso demo environment first; otherwise exact recreations from current official screenshots with real labels and controls; flat and straight on; each screen lists its source and last-checked date.
 14. **Words:** plain sentences, product name first, no emoji or arrow symbols; Contoso and other Microsoft fictional names only on public pages.
-15. **Naming:** "Industry Editions" (both words capitalized) is the label for the 10 industry editions of The Brief, in navigation, buttons and section headings. In a running sentence use lowercase: "industry edition" / "industry editions". The Executive version is not an industry edition.
+15. **Naming:** "Industry Editions" (both words capitalized) is the label for the 10 industry editions of The Brief, in navigation, buttons and section headings. In a running sentence use lowercase: "industry edition" / "industry editions". The Executive version is not an industry edition. Copilot is the brand: headlines, hero lockups, page titles, meta titles, section titles, share text and video/storyboard titles lead with "Copilot", never "Cowork" alone; body text says "Copilot Cowork" on first mention per page, then "Cowork" alone is fine. Leave unchanged: app-screen mockup window titles/icons, published file names and URLs, and quotes.
 16. **No orphans:** no single word may sit alone on its own last line in any heading, lede, button or card title. Apply `text-wrap:balance` to headings/buttons/card titles and `text-wrap:pretty` to body paragraphs, lists and captions as a baseline, then join the last two words with `&nbsp;` wherever a short heading still breaks down to a one-word final line (roughly 24 characters or fewer combined). Never join across a UI badge/chip glued to the end of a heading.
 17. **Share line:** a discreet "Built with Copilot | aka.ms/&lt;link&gt;" line, far right of row 1 after Subscribe on desktop (1 px #d1d5db divider, 13 px #6b7280 text, no box), with "Built with Copilot" as plain text plus the Microsoft Copilot icon (14 px) and `aka.ms/<link>` as a real button with a link icon (14 px, never a copy icon) before the text, that copies the full URL, swaps to a green check and "Link copied" (#107c41, #6ee7a8 on dark footers) for 1.6 seconds (`aria-live="polite"`, keyboard accessible), hover/focus turn blue #0f6cbd (#50e6ff on dark footers) with text underline, and a fixed `min-inline-size` so the header never shifts. On phones it moves to the top of the Menu panel and the footer only. One share line per page, always that page's own site/section link. Link icon before the short link; never a copy icon.
 18. **One page width:** one shared width token, `--page-max: 1240px`, with `--page-pad: 28px` side padding (16px under 760 px). Row 1 content, row 2 content, the hero text and every page section's content sit inside that same centered container so their left edges line up (Microsoft logo, row 2 title, hero eyebrow); Subscribe / the share line end at the same right edge as page content. Backgrounds (row 1, row 2, color strip, navy hero) stay full width; only the content inside is constrained. Row 2 keeps sideways scrolling on phones. A deliberately wider full-bleed element (video, image band, a scoped promo strip) may stay full bleed.
 19. **Journey:** front-door-only component — a horizontal row of four pill buttons (Home, The Brief, The Hub, The Coach) joined by a thin gradient line through the centre of the first and last pill (no overshoot), under the hero lede. Pills: white bold 16 px text, fully rounded, min width 132 px, soft shadow, lift 2 px on hover/focus. Home: 2 px white outline, "YOU ARE HERE" label, `aria-current="page"`. Option A gradients: Home `#0ea5e9`→`#2563eb`; The Brief `#2563eb`→`#6366f1`; The Hub `#6366f1`→`#a855f7`; The Coach `#a855f7`→`#db2777`; line `#2563eb, #6366f1, #a855f7, #db2777`. Under 760 px, pills stack vertically with the line running through their centres. One per site, front door only; never recolor with the Microsoft strip colors.
 20. **Imagery and video — Product icons on every app screen:** any app window shown in an image, mockup or video carries the official product icon in its title bar: Cowork icon for Cowork, the specific Dynamics 365 app icon (Contact Center, Customer Service, Sales, Finance, Supply Chain Management and so on) for Dynamics 365 screens, and the Copilot Studio icon on agent labels. Product chips and footers use the icon plus name. Icons come only from the Frontier icon library. Never use the Microsoft 365 Copilot icon; the brand is Microsoft Copilot.
 21. **Product names stay on one line:** never split Dynamics 365 (and every "Dynamics 365 &lt;App&gt;" pair, keeping "Dynamics 365" together at minimum), Microsoft 365, Microsoft Copilot, Copilot Studio, Copilot Cowork, Agent 365, Power Platform, Power Apps, Power Automate, Power BI, Microsoft Teams, Microsoft Fabric, Business Central, Contact Center, Customer Service, Supply Chain Management, Field Service across a line break in visible text (headings, body, buttons, chips, nav, captions) — join with a non-breaking space or `.nobr{white-space:nowrap}`, applied in the build step so new pages inherit it automatically. Numbers stay with their units; `aka.ms/...` links stay whole.
+22. **Section highlight:** row 2 shows the current section with the same active marker as row 1 — a 3 px Microsoft blue #0f6cbd bar under the link, fully rounded ends, 6 px above the bottom edge of row 2 (clear gap before the color strip), active text #111827. One shared script drives both rows: row 1 reads the `.on` class already set in markup; row 2 matches by path prefix for cross-page links, or IntersectionObserver scrollspy for in-page anchors that exist on the current page, moving to the clicked link immediately and to the page's hash on load. No link is marked before the first section. The bar slides with a 200 ms transition (disabled under `prefers-reduced-motion: reduce`) and never shifts neighbouring links. Phone Menu panel: current item in #111827 with a 3 px left-edge bar instead of underneath.
 
 ### Colors
 
@@ -84,14 +85,14 @@ If a published file disagrees with the summary in this skill, the published file
 
 Industry accents (all pass at least 4.5 to 1 on white): Hospitality #0e7490, Manufacturing #a16207, High Tech #6d28d9, Telecom #a21caf, Healthcare #0f766e, Financial Services #1d4ed8, Retail #be123c, Energy #15803d, Professional Services #475569, State, Local and Education #0369a1.
 
-### Header (v1.3, every page)
+### Header (v1.4, every page)
 One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
 1. White bar, 60 px tall (56 px on phones), thin bottom border #e0e0e0, sticky at the top.
 2. Left: the full Microsoft logo (four-square and wordmark, official file), a 1 px divider #bdbdbd, then "Becoming Frontier" (18 px, semibold, #242424). The lockup links to the front door.
-3. Right-aligned: The Brief, The Hub, The Coach (15 px, #242424), then a navy Subscribe button (#081628). The current section has a 3 px Frontier teal underline (#0e7490). Nothing else in this row.
-4. Section row under it (44 px, #fafafa): the section name in bold, then that section's own links. The front door has no section row.
+3. Right-aligned: The Brief, The Hub, The Coach (15 px, #616161, semibold), then a navy Subscribe button (#081628). The current link is #111827 with a 3 px Microsoft blue #0f6cbd bar underneath, rounded ends, 6 px above the bottom edge. Nothing else in this row.
+4. Section row under it (44 px, #fafafa): the section name in bold, then that section's own links in the same active-marker pattern as row 1. The front door has no section row.
 5. Microsoft color strip: a 4 px strip, full width, along the bottom edge of the section row (or the bottom of row 1 on pages with no section row), in four equal parts left to right: #f25022, #7fba00, #00a4ef, #ffb900. Decoration only: no text, aria-hidden, not clickable, stays with the sticky header. Never recolored, reordered or used anywhere else on the page.
-6. Phones: lockup plus a Menu button that opens the same links; the section row scrolls sideways.
+6. Phones: lockup plus a Menu button that opens the same links (current item shown with a 3 px blue left-edge bar); the section row scrolls sideways with a soft edge fade.
 7. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
 8. Email editions of the Brief keep their own email-safe header.
 
@@ -108,7 +109,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 9. No emoji or arrow symbols
 10. Segoe Sans stack, no more than three type sizes per page
 11. 4 px spacing grid, 16 px card corners
-12. Header matches the v1.3 header rules (Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach, Subscribe; section row; Microsoft color strip); Copilot + Dynamics 365 lockup used once per page, near the top
+12. Header matches the v1.4 header rules (Microsoft logo, divider, Becoming Frontier; The Brief, The Hub, The Coach, Subscribe with the current link marked by the blue bar; section row with the same marker; Microsoft color strip); Copilot + Dynamics 365 lockup used once per page, near the top
 13. Reads well at 390 px phone width
 14. Footer says Contoso is fictional and when labels were last checked
 15. Every app screen shows its product icon
