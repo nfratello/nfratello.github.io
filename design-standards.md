@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 2.1, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 2.2, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -45,6 +45,7 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
 - **One page width.** One shared width token, `--page-max: 1240px`, with `--page-pad: 28px` side padding (16px under 760 px). Row 1 content, row 2 content, the hero text and every page section's content sit inside that same centered container so their left edges line up: the Microsoft logo, the row 2 title and the hero eyebrow all start at the same x position, and Subscribe / the share line end at the same right edge as page content. Backgrounds stay full width — the white row 1, the light grey row 2, the color strip and the navy hero still run edge to edge; only the content inside is constrained. Row 2 keeps sideways scrolling on phones. A page that deliberately uses a wider full-bleed element (video, image band, a scoped promo strip) may leave that one element full bleed.
 - **Journey.** Front-door-only component: a horizontal row of four pill buttons (Home, The Brief, The Hub, The Coach), joined by a thin gradient line that runs through the centre of the first and last pill with no overshoot, directly under the hero lede. Each pill: white bold 16 px text, fully rounded, minimum width 132 px, soft shadow, lifts 2 px on hover and keyboard focus. Home carries a 2 px white outline and a "YOU ARE HERE" label and `aria-current="page"`. Option A gradients, left to right, each pill starting where the previous ends: Home `#0ea5e9` to `#2563eb`; The Brief `#2563eb` to `#6366f1`; The Hub `#6366f1` to `#a855f7`; The Coach `#a855f7` to `#db2777`. Connecting line: gradient `#2563eb, #6366f1, #a855f7, #db2777`. On phones (under 760 px) the pills stack vertically with the label beside each pill and the line running vertically through the pill centres. One journey per site, on the front door only; never recolor it with the Microsoft strip colors.
 - **Product icons.** Wherever a product is named in a chip, label, layer header, card, table or screen, show its official icon right beside the name. Body sentences stay plain text.
+- **Card links.** Any card grid that ends in a text link (industry cards, scenario cards, Industry Editions cards, Coach cards) uses Microsoft blue #0f6cbd text, weight 600, 13 px, with a 12 px chevron SVG after the text (stroke currentColor, never an arrow character). Hover and focus turn #0b5394 with an underline and a visible focus ring; never light cyan on white (minimum 4.5:1 contrast). Use the same short label on every card in a grid (for example "Read the Brief"), keeping the specific name in the accessible name (`aria-label="Read the &lt;Name&gt; Brief"`) so links still fit on one line. The link gets `margin-top:auto` and 14 px top padding inside a `display:flex;flex-direction:column` card, so every link in a row sits on the same baseline; cards in a row share one height (`align-items:stretch` or `grid-auto-rows:1fr`). Give any two-line eyebrow a minimum block size so titles still line up across the row.
 - **Icon library.** Use only icons from the Frontier icon library. Official Microsoft Learn packs, never changed, cropped, recolored or redrawn. No official icon yet: show the name as text.
 - **Spacing.** 4 px grid: 4, 8, 12, 16, 24, 32, 48, 64. Cards 16 px corners and 24 px padding. Sections 56 px top and bottom.
 - **Photos.** Real industry scenes, faces visible, screens facing the people using them, natural light, uncluttered.
@@ -96,6 +97,7 @@ Industry colors (accents only, always with the industry name):
 14. The footer says Contoso is fictional and when labels were last checked.
 15. Every app screen shows its product icon.
 16. No product name (Dynamics 365, Microsoft 365, Copilot Studio and the rest of the list) is split across a line break.
+17. Every card link is Microsoft blue #0f6cbd (never light cyan), at least 4.5:1 contrast, and lines up at the bottom of its card across the row.
 
 ## Header (v1.4, every page)
 One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
