@@ -1,7 +1,7 @@
 {
   "library": "Frontier icon library",
-  "version": "1.2",
-  "updated": "2026-11-21",
+  "version": "1.3",
+  "updated": "2026-11-22",
   "rule": "Only these icons. Name beside every icon. Never change or redraw. No icon: use the name as text.",
   "icons": [
     {
@@ -192,6 +192,136 @@
       "pack": "2026 logos for Scout, vector wordmark",
       "terms": "Microsoft permits use of these icons in architectural diagrams, training materials, or documentation. Do not crop, flip, rotate or distort, and do not use to represent a non-Microsoft product or service.",
       "last_checked": "2026-11-21",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Hospitality & Travel",
+      "file": "icons/Industry-Hospitality-Airplane.svg",
+      "svg": "icons/Industry-Hospitality-Airplane.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Airplane/SVG/ic_fluent_airplane_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Manufacturing",
+      "file": "icons/Industry-Manufacturing-BuildingFactory.svg",
+      "svg": "icons/Industry-Manufacturing-BuildingFactory.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Building%20Factory/SVG/ic_fluent_building_factory_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: High Tech",
+      "file": "icons/Industry-HighTech-Laptop.svg",
+      "svg": "icons/Industry-HighTech-Laptop.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Laptop/SVG/ic_fluent_laptop_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Telecom & Media",
+      "file": "icons/Industry-TelecomMedia-TV.svg",
+      "svg": "icons/Industry-TelecomMedia-TV.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/TV/SVG/ic_fluent_tv_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Healthcare",
+      "file": "icons/Industry-Healthcare-HeartPulse.svg",
+      "svg": "icons/Industry-Healthcare-HeartPulse.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Heart%20Pulse/SVG/ic_fluent_heart_pulse_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Financial Services",
+      "file": "icons/Industry-FinancialServices-BuildingBank.svg",
+      "svg": "icons/Industry-FinancialServices-BuildingBank.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Building%20Bank/SVG/ic_fluent_building_bank_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Retail & CPG",
+      "file": "icons/Industry-RetailCPG-ShoppingBag.svg",
+      "svg": "icons/Industry-RetailCPG-ShoppingBag.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Shopping%20Bag/SVG/ic_fluent_shopping_bag_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Energy",
+      "file": "icons/Industry-Energy-Flash.svg",
+      "svg": "icons/Industry-Energy-Flash.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Flash/SVG/ic_fluent_flash_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Professional Services",
+      "file": "icons/Industry-ProfessionalServices-Briefcase.svg",
+      "svg": "icons/Industry-ProfessionalServices-Briefcase.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Briefcase/SVG/ic_fluent_briefcase_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: State, Local & Edu",
+      "file": "icons/Industry-StateLocalEdu-BuildingGovernment.svg",
+      "svg": "icons/Industry-StateLocalEdu-BuildingGovernment.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Building%20Government/SVG/ic_fluent_building_government_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Federal (Brief only)",
+      "file": "icons/Industry-Federal-Flag.svg",
+      "svg": "icons/Industry-Federal-Flag.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Flag/SVG/ic_fluent_flag_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: Defense (Brief only)",
+      "file": "icons/Industry-Defense-Shield.svg",
+      "svg": "icons/Industry-Defense-Shield.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Shield/SVG/ic_fluent_shield_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
+      "status": "in library"
+    },
+    {
+      "product": "Industry icon: All Industries (Brief only)",
+      "file": "icons/Industry-AllIndustries-Globe.svg",
+      "svg": "icons/Industry-AllIndustries-Globe.svg",
+      "source": "https://github.com/microsoft/fluentui-system-icons/blob/main/assets/Globe/SVG/ic_fluent_globe_24_regular.svg",
+      "pack": "Fluent System Icons, Regular, 24px (MIT licence)",
+      "terms": "MIT licence. Not recolored or redrawn; tinted via CSS currentColor only.",
+      "last_checked": "2026-11-22",
       "status": "in library"
     }
   ]
