@@ -3,7 +3,7 @@
 
 # Frontier with Microsoft Design Standards
 
-Build and review content for the public "Frontier with Microsoft" sites so it matches the published design standards, and hand back a pass or fail report on the 15-point checklist.
+Build and review content for the public "Frontier with Microsoft" sites so it matches the published design standards, and hand back a pass or fail report on the 16-point checklist.
 
 ## When to Use
 
@@ -23,7 +23,7 @@ Audience: Nick Fratello's peers on Ted Kempf's team (for example Justin Raphael 
 
 Fetch and read these before building or reviewing anything:
 
-1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 1.9, updated November 21, 2026)
+1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 2.0, updated November 21, 2026)
 2. https://nfratello.github.io/frontier-tokens.json (colors, fonts, spacing, hero)
 3. https://nfratello.github.io/frontier.css
 4. https://nfratello.github.io/icons/icons.json (icon library)
@@ -36,12 +36,12 @@ If a published file disagrees with the summary in this skill, the published file
 2. **Build with the tokens and CSS only.** Use colors, fonts, spacing, radii and hero values from `frontier-tokens.json` and the classes in `frontier.css`. Never invent new colors, sizes or spacing. If a value you need is missing, use the nearest token and flag it in the report.
 3. **Pull icons only from `icons.json`.** Use the official icon file it points to, unchanged. If a product has no entry, write the product name as plain text. Never generate, redraw, recolor, crop, flip or rotate an icon.
 4. **Ground labels in Microsoft Learn.** Check every product name and on-screen label against current Microsoft Learn wording (learn.microsoft.com). For each product screen, record its source (Contoso demo screenshot, or the official screenshot it recreates) and the last-checked date.
-5. **Run the 15-point checklist** (below). Report pass or fail for every item, with a one-line reason for each fail.
+5. **Run the 16-point checklist** (below). Report pass or fail for every item, with a one-line reason for each fail.
 6. **Hand back, do not publish.** Deliver the work and the checklist report to the requester, ready to hand to Nick Fratello for review. Never push, commit or upload to the Frontier sites.
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 20 rules
+### The 21 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -63,6 +63,7 @@ If a published file disagrees with the summary in this skill, the published file
 18. **One page width:** one shared width token, `--page-max: 1240px`, with `--page-pad: 28px` side padding (16px under 760 px). Row 1 content, row 2 content, the hero text and every page section's content sit inside that same centered container so their left edges line up (Microsoft logo, row 2 title, hero eyebrow); Subscribe / the share line end at the same right edge as page content. Backgrounds (row 1, row 2, color strip, navy hero) stay full width; only the content inside is constrained. Row 2 keeps sideways scrolling on phones. A deliberately wider full-bleed element (video, image band, a scoped promo strip) may stay full bleed.
 19. **Journey:** front-door-only component — a horizontal row of four pill buttons (Home, The Brief, The Hub, The Coach) joined by a thin gradient line through the centre of the first and last pill (no overshoot), under the hero lede. Pills: white bold 16 px text, fully rounded, min width 132 px, soft shadow, lift 2 px on hover/focus. Home: 2 px white outline, "YOU ARE HERE" label, `aria-current="page"`. Option A gradients: Home `#0ea5e9`→`#2563eb`; The Brief `#2563eb`→`#6366f1`; The Hub `#6366f1`→`#a855f7`; The Coach `#a855f7`→`#db2777`; line `#2563eb, #6366f1, #a855f7, #db2777`. Under 760 px, pills stack vertically with the line running through their centres. One per site, front door only; never recolor with the Microsoft strip colors.
 20. **Imagery and video — Product icons on every app screen:** any app window shown in an image, mockup or video carries the official product icon in its title bar: Cowork icon for Cowork, the specific Dynamics 365 app icon (Contact Center, Customer Service, Sales, Finance, Supply Chain Management and so on) for Dynamics 365 screens, and the Copilot Studio icon on agent labels. Product chips and footers use the icon plus name. Icons come only from the Frontier icon library. Never use the Microsoft 365 Copilot icon; the brand is Microsoft Copilot.
+21. **Product names stay on one line:** never split Dynamics 365 (and every "Dynamics 365 &lt;App&gt;" pair, keeping "Dynamics 365" together at minimum), Microsoft 365, Microsoft Copilot, Copilot Studio, Copilot Cowork, Agent 365, Power Platform, Power Apps, Power Automate, Power BI, Microsoft Teams, Microsoft Fabric, Business Central, Contact Center, Customer Service, Supply Chain Management, Field Service across a line break in visible text (headings, body, buttons, chips, nav, captions) — join with a non-breaking space or `.nobr{white-space:nowrap}`, applied in the build step so new pages inherit it automatically. Numbers stay with their units; `aka.ms/...` links stay whole.
 
 ### Colors
 
@@ -94,7 +95,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 7. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
 8. Email editions of the Brief keep their own email-safe header.
 
-### The 15-point checklist
+### The 16-point checklist
 
 1. Text contrast at least 4.5 to 1
 2. No more than three colors working together
@@ -111,6 +112,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 13. Reads well at 390 px phone width
 14. Footer says Contoso is fictional and when labels were last checked
 15. Every app screen shows its product icon
+16. No product name is split across a line break
 
 ## Output Format
 
@@ -124,7 +126,7 @@ Sources unreachable: {list or "none"}
 | # | Check | Result | Reason (fails only) |
 |---|-------|--------|---------------------|
 | 1 | Text contrast >= 4.5:1 | PASS | |
-| ... (all 15 rows) |
+| ... (all 16 rows) |
 
 Screens: {screen} — source: {Contoso demo / official screenshot URL}, last checked {date}
 Next step: hand to Nick Fratello for review (not published).
