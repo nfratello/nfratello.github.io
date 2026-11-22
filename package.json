@@ -1,0 +1,26 @@
+{
+  "name": "nfratello.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static site for Frontier with Microsoft (front door, The Hub, Design standards). P41: tools/ checks.",
+  "main": "share-line.js",
+  "scripts": {
+    "check-all": "node tools/check-all.js",
+    "deploy": "node tools/deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfratello/nfratello.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nfratello/nfratello.github.io/issues"
+  },
+  "homepage": "https://github.com/nfratello/nfratello.github.io#readme",
+  "devDependencies": {
+    "playwright-core": "^1.65.1"
+  }
+}
