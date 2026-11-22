@@ -110,7 +110,7 @@ figcaption{position:absolute;inset-block-end:10px;inset-inline-start:10px;backgr
 .resp ul{margin:4px 0;padding-inline-start:18px}.resp li{margin-block-end:3px}
 .srcs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-block-start:10px}.srcs small{color:var(--muted);font-size:12px}
 .src{font-size:11px;font-weight:700;color:var(--teal);background:#ecfeff;border:1px solid var(--teal-l);border-radius:999px;padding-block:2px;padding-inline:8px}
-.acts{display:flex;gap:8px;margin-block-start:10px}.btn{border:2px solid var(--teal);color:var(--teal);border-radius:8px;padding-block:4px;padding-inline:12px;font-weight:700;font-size:13px}.btn.pri{background:var(--teal);color:#fff}
+.acts{display:flex;gap:8px;margin-block-start:10px}.btn{border:2px solid var(--teal);color:var(--teal);border-radius:8px;padding-block:4px;padding-inline:12px;font-weight:700;font-size:13px}.btn{display:inline-flex;align-items:center;gap:4px;transition:background-color .15s ease,transform .15s ease,box-shadow .15s ease}.btn .arr{display:inline-block;transition:transform .15s ease}.btn:hover{transform:translateY(-1px)}.btn:hover .arr{transform:translateX(4px)}.btn:active{transform:translateY(0)}.btn:focus-visible{outline:2px solid #fff;box-shadow:0 0 0 2px #fff,0 0 0 4px currentColor}@media (prefers-reduced-motion:reduce){.btn,.btn .arr{transition:none}.btn:hover{transform:none}.btn:hover .arr{transform:none}}.btn-brief{background:#1d4ed8;color:#fff}.btn-brief:hover{background:#1e40af;color:#fff;box-shadow:0 6px 16px -4px rgba(29,78,216,.6)}.btn-brief:active{background:#1e3a8a;color:#fff}.btn-hub{background:#4f46e5;color:#fff}.btn-hub:hover{background:#4338ca;color:#fff;box-shadow:0 6px 16px -4px rgba(79,70,229,.6)}.btn-hub:active{background:#3730a3;color:#fff}.btn-coach{background:#9333ea;color:#fff}.btn-coach:hover{background:#7e22ce;color:#fff;box-shadow:0 6px 16px -4px rgba(147,51,234,.6)}.btn-coach:active{background:#6b21a8;color:#fff}.btn.pri{background:var(--teal);color:#fff}
 .ent{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.rt{display:block;font-size:16px;margin-block-end:8px}
 .chat p{margin:0 0 6px;padding-block:6px;padding-inline:10px;border-radius:10px;max-width:80%;background:#f1f5f9}.chat p.guest{margin-inline-start:auto;background:var(--teal);color:#fff}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin-block:6px}.fields small{display:block;font-size:11px;font-weight:700;color:var(--muted)}
@@ -162,14 +162,14 @@ h1,h2,h3{font-family:"Segoe Sans Display","Segoe UI Variable Display","Segoe UI"
 .gh .ghr{position:relative}
 .gh .gnav{margin-inline-start:auto;display:flex;align-items:center;gap:4px}
 .gh .gnav a,.gh .gmenu nav a{font-size:15px;color:#616161;font-weight:600;text-decoration:none;padding-block:19px 16px;padding-inline:12px;border-bottom:0;transition:color .2s}
-.gh .gnav a:hover{color:#242424}
+.gh .gnav a:not(.cta):hover{color:#242424}
 .gh .gnav a.on{color:#111827}
 .gh .gnav a{position:relative}
 .gh .gnav a::after{content:"";position:absolute;inset-inline:0;bottom:8px;height:3px;border-radius:999px;background:#9ca3af;opacity:0;transition:opacity .15s ease}
 .gh .gnav a:not(.on):hover::after,.gh .gnav a:not(.on):focus-visible::after{opacity:1}
 @media (prefers-reduced-motion:reduce){.gh .gnav a::after{transition:none}}
 .gh .hbar{position:absolute;left:0;bottom:8px;height:3px;border-radius:999px;background:#0f6cbd;opacity:0;transition:transform .2s ease,width .2s ease,opacity .2s ease;pointer-events:none}
-.gh a.cta{margin-inline-start:14px;background:#081628;color:#fff;border-radius:6px;padding-block:8px;padding-inline:14px;border:0;font-weight:600;font-size:14px}
+.gh a.cta{margin-inline-start:14px;background:#0f6cbd;color:#fff;border-radius:6px;padding-block:8px;padding-inline:14px;border:0;font-weight:600;font-size:14px}.gh a.cta:hover,.gh a.cta:focus-visible{background:#115ea3;color:#fff}.gh a.cta:active{background:#0f548c;color:#fff}
 .gh .gmenu{display:none;margin-inline-start:auto;position:relative}
 .gh .gmenu summary{list-style:none;cursor:pointer;font-size:15px;font-weight:600;padding-block:8px;padding-inline:12px;border:1px solid #d1d1d1;border-radius:6px}
 .gh .gmenu summary::-webkit-details-marker{display:none}

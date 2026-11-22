@@ -1,7 +1,7 @@
 {
   "name": "Frontier with Microsoft design tokens",
-  "version": "1.4",
-  "updated": "2026-11-21",
+  "version": "1.5",
+  "updated": "2026-11-22",
   "font": "\"Segoe Sans Text\",\"Segoe UI Variable Text\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "font_display": "\"Segoe Sans Display\",\"Segoe UI Variable Display\",\"Segoe UI\",Carlito,Arial,sans-serif",
   "pageMax": 1240,
@@ -27,6 +27,13 @@
     "brief": "#c2410c",
     "hub": "#0e7490",
     "coach": "#6d28d9"
+  },
+  "buttons": {
+    "primary": { "note": "Subscribe only, header and any Subscribe form", "fill": "#0f6cbd", "hover": "#115ea3", "pressed": "#0f548c", "text": "#ffffff" },
+    "brief": { "note": "Anything that opens The Brief", "fill": "#1d4ed8", "hover": "#1e40af", "text": "#ffffff" },
+    "hub": { "note": "Anything that opens The Hub, the storyboard, Dynamics 365 skills or Industries", "fill": "#4f46e5", "hover": "#4338ca", "text": "#ffffff" },
+    "coach": { "note": "Anything that opens The Coach", "fill": "#9333ea", "hover": "#7e22ce", "text": "#ffffff" },
+    "rule": "Solid colors only, never gradients. White text at 4.5:1 or better in every state (default, hover, pressed, focus). Hover deepens the color, lifts 1px and adds a soft glow in the button's own color; pressed is deeper again with no lift; keyboard focus adds a white outline plus a ring in the button's color. 150ms transition, disabled under prefers-reduced-motion."
   },
   "industry_colors": {
     "All Industries": "#c2410c",
