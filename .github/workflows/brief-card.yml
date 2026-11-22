@@ -1,8 +1,9 @@
 name: Rebuild front door Brief card
 
-# P42: regenerates the front door "This week" Brief card's date, headline,
-# top three stories and link from the Brief repo's public issues/issues.json
-# manifest (scripts/build-brief-card.js). Commits only if something changed.
+# P42/P44: regenerates the front door "This week" Brief card's date,
+# headline, image, top three stories and link from the Brief repo's public
+# issues/issues.json manifest (scripts/build-brief-card.js). Commits only if
+# something changed.
 on:
   schedule:
     # 06:30 America/New_York. GitHub Actions cron is UTC; 06:30 ET is

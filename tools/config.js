@@ -14,5 +14,5 @@ module.exports = {
     'Frontier_Style_Guide.html',
     'Contoso_Hospitality_Cowork_Dynamics365_Storyboard.html',
   ],
-  widths: [1920, 1440, 1240, 1024, 390],
+  widths: [1920, 1440, 1024, 768, 390],
 };
