@@ -6,7 +6,8 @@
   "main": "share-line.js",
   "scripts": {
     "check-all": "node tools/check-all.js",
-    "deploy": "node tools/deploy.js"
+    "deploy": "node tools/deploy.js",
+    "build:brief-card": "node scripts/build-brief-card.js"
   },
   "repository": {
     "type": "git",

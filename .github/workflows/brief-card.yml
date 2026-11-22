@@ -1,0 +1,44 @@
+name: Rebuild front door Brief card
+
+# P42: regenerates the front door "This week" Brief card's date, headline,
+# top three stories and link from the Brief repo's public issues/issues.json
+# manifest (scripts/build-brief-card.js). Commits only if something changed.
+on:
+  schedule:
+    # 06:30 America/New_York. GitHub Actions cron is UTC; 06:30 ET is
+    # 11:30 UTC during EST (Nov-Mar) and 10:30 UTC during EDT (Mar-Nov).
+    # Run both and let the no-op check make the extra run a no-op.
+    - cron: '30 11 * * *'
+    - cron: '30 10 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild the Brief card from issues.json
+        run: npm run build:brief-card
+
+      - name: Commit regenerated files
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Frontier_Home.html index.html
+          if git diff --cached --quiet; then
+            echo "Nothing to commit — already up to date."
+          else
+            git commit -m "Auto: rebuild front door Brief card from issues manifest [skip ci]"
+            git push
+          fi
