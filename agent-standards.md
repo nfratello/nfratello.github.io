@@ -23,7 +23,7 @@ Audience: Nick Fratello's peers on Ted Kempf's team (for example Justin Raphael 
 
 Fetch and read these before building or reviewing anything:
 
-1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 2.2, updated November 21, 2026)
+1. https://nfratello.github.io/design-standards.md (plain-text standards, Version 2.3, updated November 22, 2026)
 2. https://nfratello.github.io/frontier-tokens.json (colors, fonts, spacing, hero)
 3. https://nfratello.github.io/frontier.css
 4. https://nfratello.github.io/icons/icons.json (icon library)
@@ -41,7 +41,7 @@ If a published file disagrees with the summary in this skill, the published file
 
 ## Standards Summary (stable; the source files win on conflict)
 
-### The 23 rules
+### The 24 rules
 
 1. **Canvas:** white and off-white sections with small pops of color; navy for the hero and footer; the header is white.
 2. **Hero:** photo on the right 62 percent with the navy fade from the left (solid to 40 percent, 0.72 opacity at 55 percent, clear by 80 percent). Keep it; it is the signature.
@@ -66,6 +66,7 @@ If a published file disagrees with the summary in this skill, the published file
 21. **Imagery and video — Product icons on every app screen:** any app window shown in an image, mockup or video carries the official product icon in its title bar: Cowork icon for Cowork, the specific Dynamics 365 app icon (Contact Center, Customer Service, Sales, Finance, Supply Chain Management and so on) for Dynamics 365 screens, and the Copilot Studio icon on agent labels. Product chips and footers use the icon plus name. Icons come only from the Frontier icon library. Never use the Microsoft 365 Copilot icon; the brand is Microsoft Copilot.
 22. **Product names stay on one line:** never split Dynamics 365 (and every "Dynamics 365 &lt;App&gt;" pair, keeping "Dynamics 365" together at minimum), Microsoft 365, Microsoft Copilot, Copilot Studio, Copilot Cowork, Agent 365, Power Platform, Power Apps, Power Automate, Power BI, Microsoft Teams, Microsoft Fabric, Business Central, Contact Center, Customer Service, Supply Chain Management, Field Service across a line break in visible text (headings, body, buttons, chips, nav, captions) — join with a non-breaking space or `.nobr{white-space:nowrap}`, applied in the build step so new pages inherit it automatically. Numbers stay with their units; `aka.ms/...` links stay whole.
 23. **Section highlight:** row 2 shows the current section with the same active marker as row 1 — a 3 px Microsoft blue #0f6cbd bar under the link, fully rounded ends, 6 px above the bottom edge of row 2 (clear gap before the color strip), active text #111827. One shared script drives both rows: row 1 reads the `.on` class already set in markup; row 2 matches by path prefix for cross-page links, or IntersectionObserver scrollspy for in-page anchors that exist on the current page, moving to the clicked link immediately and to the page's hash on load. No link is marked before the first section. The bar slides with a 200 ms transition (disabled under `prefers-reduced-motion: reduce`) and never shifts neighbouring links. Phone Menu panel: current item in #111827 with a 3 px left-edge bar instead of underneath.
+24. **This week cards:** the three front-door "This week" cards (The Brief, The Hub, The Coach) share one structure top to bottom — 16:9 image, eyebrow, title, description, a detail block, then a button — built with CSS subgrid so every row lines up across all three cards (fallback without subgrid support: fixed min-heights for title/description, the detail block set to `flex:1`, button pinned to the bottom with `margin-top:auto`). Card identity comes from the image and the eyebrow color only, never a colored top border: Brief blue #2563eb to indigo #6366f1, Hub indigo #6366f1 to violet #a855f7, Coach violet #a855f7 to pink #db2777 (eyebrow shown in #a21caf for contrast), matching the journey pill gradients. Buttons stay navy for all three.
 
 ### Colors
 
@@ -97,7 +98,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 7. Below the header: the navy fade hero, unchanged. Anchor offsets: 112 px with a section row, 68 px without.
 8. Email editions of the Brief keep their own email-safe header.
 
-### The 17-point checklist
+### The 18-point checklist
 
 1. Text contrast at least 4.5 to 1
 2. No more than three colors working together
@@ -116,6 +117,7 @@ One shared header on the front door, The Brief, The Hub, The Coach, the storyboa
 15. Every app screen shows its product icon
 16. No product name is split across a line break
 17. Every card link is Microsoft blue, at least 4.5:1 contrast, and lines up at the bottom of its card across the row
+18. The three "This week" cards line up row for row (eyebrow, title, description, detail block, button) and each card's identity color matches its journey pill
 
 ## Output Format
 

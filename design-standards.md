@@ -1,6 +1,6 @@
 # Frontier with Microsoft Design Standards
 
-Version 2.2, updated November 21, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
+Version 2.3, updated November 22, 2026. Applies to the front door, The Brief, The Hub, The Coach, storyboards and the App Library.
 
 Human page: https://nfratello.github.io/style-guide/
 Tokens: https://nfratello.github.io/frontier-tokens.json
@@ -53,6 +53,7 @@ Follow the Frontier with Microsoft Design Standards v1.3 for everything you buil
 - **Imagery and video — Product icons on every app screen.** Any app window shown in an image, mockup or video carries the official product icon in its title bar: Cowork icon for Cowork, the specific Dynamics 365 app icon (Contact Center, Customer Service, Sales, Finance, Supply Chain Management and so on) for Dynamics 365 screens, and the Copilot Studio icon on agent labels. Product chips and footers use the icon plus name. Icons come only from the Frontier icon library. Never use the Microsoft 365 Copilot icon; the brand is Microsoft Copilot.
 - **Product names stay on one line.** Never split these names across a line break in visible text: Dynamics 365 (and every "Dynamics 365 &lt;App&gt;" pair keeps "Dynamics 365" together at minimum), Microsoft 365, Microsoft Copilot, Copilot Studio, Copilot Cowork, Agent 365, Power Platform, Power Apps, Power Automate, Power BI, Microsoft Teams, Microsoft Fabric, Business Central, Contact Center, Customer Service, Supply Chain Management, Field Service. Join the two words with a non-breaking space (or `<span class="nobr">` with `.nobr{white-space:nowrap}`) wherever the name appears: headings, body, buttons, chips, nav, captions. Apply this in the build step or a shared script, not by hand, so new pages get it automatically. Numbers stay with their units, and `aka.ms/...` links stay whole.
 - **Words.** Plain sentences. Product name first, then what it does. No emoji or arrows. Contoso and other Microsoft fictional names only on public pages.
+- **This week cards.** The three front-door "This week" cards (The Brief, The Hub, The Coach) share one structure top to bottom — 16:9 image, eyebrow, title, description, a detail block, then a button — built with CSS subgrid so every row lines up across all three cards (fallback without subgrid support: fixed min-heights for the title and description, the detail block set to `flex:1`, and the button pinned to the bottom with `margin-top:auto`). Card identity comes from the image and the eyebrow color only, never a colored top border: Brief blue #2563eb to indigo #6366f1, Hub indigo #6366f1 to violet #a855f7, Coach violet #a855f7 to pink #db2777 (eyebrow shown in #a21caf for contrast on white) — matching the journey pill gradients exactly. Buttons stay navy for all three.
 
 ## Colors
 
@@ -98,6 +99,7 @@ Industry colors (accents only, always with the industry name):
 15. Every app screen shows its product icon.
 16. No product name (Dynamics 365, Microsoft 365, Copilot Studio and the rest of the list) is split across a line break.
 17. Every card link is Microsoft blue #0f6cbd (never light cyan), at least 4.5:1 contrast, and lines up at the bottom of its card across the row.
+18. The three "This week" cards line up row for row (eyebrow, title, description, detail block, button) and each card's identity color matches its journey pill.
 
 ## Header (v1.4, every page)
 One shared header on the front door, The Brief, The Hub, The Coach, the storyboards and Design standards. Copy it exactly from the published pages; do not restyle it.
