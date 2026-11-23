@@ -464,7 +464,7 @@ function buildDetailStyles() {
 @media (max-width:760px){.pauseall{margin-inline-start:0;width:100%;order:99}.skviewall{width:100%;margin-inline-start:0;margin-block-start:8px}}
 
 /* ---- Full-page view ---- */
-.skfp{position:fixed;inset:0;z-index:60;background:#f1f5f9;overflow-y:auto}
+.skfp{position:fixed;inset:0;z-index:60;background:#f1f5f9;overflow-y:auto;touch-action:pan-y}
 .skfp[hidden]{display:none}
 .skfp-top{display:flex;align-items:center;gap:16px;padding:14px 24px;background:#fff;border-block-end:1px solid #e2e8f0;position:sticky;top:0;z-index:2}
 .skfp-back{border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px;color:#0f172a;cursor:pointer;font:inherit}
@@ -539,7 +539,7 @@ function buildDetailStyles() {
 }
 
 /* ---- Full-screen viewer ---- */
-.skvw{position:fixed;inset:0;z-index:70;background:rgba(10,14,40,.95);color:#fff;display:flex;flex-direction:column;align-items:center}
+.skvw{position:fixed;inset:0;z-index:70;background:rgba(10,14,40,.95);color:#fff;display:flex;flex-direction:column;align-items:center;touch-action:pan-y}
 .skvw[hidden]{display:none}
 .skvw-top{position:fixed;top:0;inset-inline:0;display:flex;align-items:center;gap:16px;padding:16px 24px;z-index:2}
 .skvw-back{border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:8px 16px;font-weight:600;font-size:13px;cursor:pointer;font:inherit}
@@ -768,6 +768,30 @@ function buildDetailScript() {
   fp.querySelector('.skfp-prev').addEventListener('click', function (ev) { if (ev.currentTarget.dataset.slug) location.hash = 'skill=' + ev.currentTarget.dataset.slug; });
   fp.querySelector('.skfp-next').addEventListener('click', function (ev) { if (ev.currentTarget.dataset.slug) location.hash = 'skill=' + ev.currentTarget.dataset.slug; });
 
+  // Swipe support (phones) — FH47: mirrors the viewer's swipe below, stepping
+  // Previous/Next within the active filter via the same hash the buttons use.
+  (function () {
+    var startX = null, startY = null, lock = null;
+    fp.addEventListener('touchstart', function (ev) {
+      startX = ev.touches[0].clientX; startY = ev.touches[0].clientY; lock = null;
+    }, { passive: true });
+    fp.addEventListener('touchmove', function (ev) {
+      if (startX === null) return;
+      var dx = ev.touches[0].clientX - startX, dy = ev.touches[0].clientY - startY;
+      if (lock === null) lock = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (lock === 'x') ev.preventDefault(); // own the gesture so the page never scrolls sideways
+    }, { passive: false });
+    fp.addEventListener('touchend', function (ev) {
+      if (startX === null) return;
+      var dx = ev.changedTouches[0].clientX - startX;
+      if (lock === 'x' && Math.abs(dx) > 50) {
+        var btn = dx < 0 ? fp.querySelector('.skfp-next') : fp.querySelector('.skfp-prev');
+        if (btn && !btn.disabled && btn.dataset.slug) location.hash = 'skill=' + btn.dataset.slug;
+      }
+      startX = null; startY = null; lock = null;
+    }, { passive: true });
+  })();
+
   // ---------------- Full-screen viewer ----------------
   var vw = document.createElement('div');
   vw.className = 'skvw';
@@ -918,15 +942,24 @@ function buildDetailScript() {
   vw.querySelector('.skvw-restart').addEventListener('click', function () { vwState.idx = 0; renderViewer(); });
   document.getElementById('skvwAutoplay').addEventListener('change', function (ev) { vwState.autoplay = ev.target.checked; });
 
-  // Swipe support (phones).
+  // Swipe support (phones) — FH47: axis-locked like the full-page view so a
+  // horizontal swipe never scrolls the page sideways.
   (function () {
-    var startX = null;
-    vw.addEventListener('touchstart', function (ev) { startX = ev.touches[0].clientX; }, { passive: true });
+    var startX = null, startY = null, lock = null;
+    vw.addEventListener('touchstart', function (ev) {
+      startX = ev.touches[0].clientX; startY = ev.touches[0].clientY; lock = null;
+    }, { passive: true });
+    vw.addEventListener('touchmove', function (ev) {
+      if (startX === null) return;
+      var dx = ev.touches[0].clientX - startX, dy = ev.touches[0].clientY - startY;
+      if (lock === null) lock = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      if (lock === 'x') ev.preventDefault(); // own the gesture so the page never scrolls sideways
+    }, { passive: false });
     vw.addEventListener('touchend', function (ev) {
       if (startX === null) return;
       var dx = ev.changedTouches[0].clientX - startX;
-      if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
-      startX = null;
+      if (lock === 'x' && Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+      startX = null; startY = null; lock = null;
     }, { passive: true });
   })();
 
