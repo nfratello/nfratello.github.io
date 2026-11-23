@@ -52,8 +52,15 @@ const FRONT_DOOR_ORDER = [
 // Industries issue IS that event's own issue (matched by URL slug or kind).
 // Every other issue (ordinary weekly issues and the fallback view) uses a
 // real, text-free, people-first photo instead (see EDITION_IMAGE below).
+// P33: official event art is used only on cards labeled for that event, and
+// is removed when the event content rotates out. In practice this card
+// already reverts automatically — pickCardData() below only returns this
+// image when the newest "All Industries" issue IS the matching event issue
+// (matched by URL slug); any other week (including the fallback view) uses
+// the edition's own people-first photo instead, with no manual revert step
+// needed. Weekly Brief publish note: Ignite art is for Ignite issues only.
 const EVENT_ART = {
-  ignite: { src: 'assets/img/Brief_Card_Art_Ignite.jpg', alt: 'Microsoft logo artwork from Ignite 2026' },
+  ignite: { src: 'assets/img/Brief_Card_Art_Ignite.jpg', alt: 'The Brief this week: Ignite 2026' },
 };
 
 // Text-free, people-first "wide" hero photo already published per edition
@@ -133,7 +140,10 @@ function pickCardData(issues) {
   const img = first ? EDITION_IMAGE[first.edition] : null;
   const image = img
     ? { src: BRIEF_ASSET_BASE + img.file, alt: img.alt, pos: img.pos, external: true }
-    : { src: 'assets/img/Brief_Card_Art_Ignite.jpg', alt: 'Microsoft Brief artwork', pos: '50% 50%', external: false };
+    // Extreme edge case only (no editions found at all): a generic, event-free
+    // local photo — never the Ignite event art, which is reserved for Ignite
+    // issues only (P33).
+    : { src: 'assets/img/brief-this-week.jpg', alt: 'Microsoft Brief artwork', pos: '50% 50%', external: false };
 
   return {
     mode: 'choose-your-edition-fallback',
