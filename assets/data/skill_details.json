@@ -1,0 +1,256 @@
+{
+ "version": "draft-2026-11-22",
+ "note": "Illustrative. Review by Nick before publishing.",
+ "skills": [
+  {
+   "name": "Pipeline prioritizer",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A ranked worklist of your open opportunities",
+    "The evidence behind each rank: value, urgency, risk and momentum",
+    "One next action for every deal",
+    "Nothing changes in Dynamics 365 until you approve"
+   ]
+  },
+  {
+   "name": "Deal rescue",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "The likely reasons the deal stalled, each with its evidence",
+    "The signals and risks found in records, email and meetings",
+    "A recommended action for each cause",
+    "A short plan to get the deal moving again"
+   ]
+  },
+  {
+   "name": "Customer engagement strategy",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A 30-day plan for the account, week by week",
+    "Who to engage, why they matter and how to reach them",
+    "Where to bring in your own leaders or specialists",
+    "A plan you edit before anything is sent"
+   ]
+  },
+  {
+   "name": "Meeting preparation",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A one-page brief before the meeting",
+    "Who is attending and what changed since you last met",
+    "Open issues and questions they are likely to ask",
+    "A goal and an ask for the meeting"
+   ]
+  },
+  {
+   "name": "Post-meeting follow-up",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "The decisions, owners and dates from the meeting",
+    "Proposed updates to the opportunity record",
+    "A draft follow-up email to the customer",
+    "Nothing is sent or saved until you review it"
+   ]
+  },
+  {
+   "name": "Deal catch-up",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "What changed across your deals since the date you choose",
+    "Customer movement kept apart from record housekeeping",
+    "A suggested next step for each change",
+    "A quick read before a pipeline call"
+   ]
+  },
+  {
+   "name": "Competitive strategy",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "Positioning tailored to this deal",
+    "Responses to the competitor's claims, using approved evidence",
+    "Claims that still need proof, flagged",
+    "Win themes tied to the customer's priorities"
+   ]
+  },
+  {
+   "name": "Business case composer",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A decision-ready business case in the customer's own words",
+    "Today's cost and the value of the change",
+    "Estimates you can trace back to their evidence",
+    "A list of inputs still to confirm with the customer"
+   ]
+  },
+  {
+   "name": "Deal desk",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A deal desk request with the configuration and terms",
+    "Pricing and discount checks against your guidelines",
+    "Who needs to approve, and why",
+    "A justification ready to send for approval"
+   ]
+  },
+  {
+   "name": "Stage advance readiness",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A checklist of your stage criteria for this deal",
+    "The evidence for each criterion, or what is missing",
+    "What to ask the customer next",
+    "An assessment only; you decide whether to move the stage"
+   ]
+  },
+  {
+   "name": "Reconcile my opportunity",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "Proposed field updates from your recent conversations",
+    "Where each change came from: meeting, email or call",
+    "New contacts who joined the thread",
+    "Updates are applied only when you approve them"
+   ]
+  },
+  {
+   "name": "Draft outreach",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "A personalized email for the right person at the account",
+    "Context from the account, the deal and past conversations",
+    "A clear, low-pressure ask",
+    "A draft for you to edit and send"
+   ]
+  },
+  {
+   "name": "CRM data hygiene",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "Records with missing or stale information",
+    "The fix suggested for each one",
+    "Complete records confirmed, so you know what is done",
+    "Changes saved only when you approve them"
+   ]
+  },
+  {
+   "name": "Sales Research Agent",
+   "eyebrow": "SELL · For account managers",
+   "what_you_get": [
+    "Answers to business questions about your pipeline and market",
+    "Charts of trends such as win rate or forecast",
+    "The likely reasons behind the numbers",
+    "Research on accounts and competitors"
+   ]
+  },
+  {
+   "name": "Segment analysis",
+   "eyebrow": "SELL · For sales managers",
+   "what_you_get": [
+    "Growth and performance by customer segment",
+    "Patterns across segments, with the evidence",
+    "Segments that are under-covered or growing fast",
+    "Where to focus sellers next"
+   ]
+  },
+  {
+   "name": "Executive deal review",
+   "eyebrow": "SELL · For sales managers",
+   "what_you_get": [
+    "A one-page summary of the top deals for leadership",
+    "The strongest deals and the deals at risk",
+    "The asks for leadership, such as an executive call",
+    "The source and time of the data"
+   ]
+  },
+  {
+   "name": "Forecast rollup",
+   "eyebrow": "SELL · For sales managers",
+   "what_you_get": [
+    "Your team's forecast consolidated in one view",
+    "Commit and best case compared with the evidence",
+    "Deals in commit with weak evidence, flagged",
+    "The gap to close, with the reasons"
+   ]
+  },
+  {
+   "name": "Team pipeline review",
+   "eyebrow": "SELL · For sales managers",
+   "what_you_get": [
+    "Pipeline coverage for each seller and the team",
+    "Velocity and forecast accuracy",
+    "The biggest risks, such as deals stuck in a stage",
+    "Where to help first"
+   ]
+  },
+  {
+   "name": "Team activity coaching",
+   "eyebrow": "SELL · For sales managers",
+   "what_you_get": [
+    "Deals with no recent customer contact",
+    "A coaching suggestion for each deal",
+    "A focus on the work, not the person",
+    "Talking points for your one-on-ones"
+   ]
+  },
+  {
+   "name": "Case triage",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "Open cases in priority order",
+    "The reason for each priority: deadline, impact, commitments, unanswered messages",
+    "A suggested owner or next step for each case",
+    "Escalations raised before deadlines are missed"
+   ]
+  },
+  {
+   "name": "Case preparation brief",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "A one-screen brief before you contact the customer",
+    "Status, history and what was already tried",
+    "Open commitments to the customer",
+    "A suggested next step"
+   ]
+  },
+  {
+   "name": "Answer research",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "A draft answer backed by verified knowledge articles",
+    "Similar cases and how they were resolved",
+    "Conflicting or thin evidence, flagged",
+    "Sources you can check before you reply"
+   ]
+  },
+  {
+   "name": "Draft customer reply",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "A reply grounded in verified case facts and policy",
+    "Clear steps for the customer to follow",
+    "A tone that matches the situation",
+    "Left as a draft for you to review and send"
+   ]
+  },
+  {
+   "name": "Knowledge harvest",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "A draft knowledge article from a verified fix",
+    "Symptom, cause, workaround and resolution",
+    "Customer details removed",
+    "A check for duplicate articles before you publish"
+   ]
+  },
+  {
+   "name": "Customer brief and value metrics",
+   "eyebrow": "SERVE · For service agents",
+   "what_you_get": [
+    "One view of the customer before a sales or service conversation",
+    "Key numbers such as open cases, satisfaction and renewal date",
+    "The value delivered this year",
+    "Talking points for the conversation"
+   ]
+  }
+ ]
+}
