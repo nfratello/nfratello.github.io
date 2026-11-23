@@ -48,6 +48,27 @@ const FRONT_DOOR_ORDER = [
   'State, Local & Education',
 ];
 
+// P46: short display names for the fallback card's top-3 story list, kept in
+// sync by hand with the Brief repo's own scripts/edition-names.js (that repo
+// is the canonical source; this file can't require() across repos). The
+// front door's own tiles below this card are the source of truth for each
+// short form.
+const SHORT_NAME = {
+  'Hospitality & Travel': 'Hospitality & Travel',
+  'Manufacturing & Mobility': 'Manufacturing',
+  'High Tech & Software': 'High Tech',
+  'Telecom & Media': 'Telecom & Media',
+  'Healthcare & Life Sciences': 'Healthcare',
+  'Financial Services': 'Financial Services',
+  'Retail & Consumer Goods': 'Retail & CPG',
+  'Energy & Utilities': 'Energy',
+  'Professional Services': 'Professional Services',
+  'State, Local & Education': 'State, Local & Edu',
+};
+function shortName(longName) {
+  return SHORT_NAME[longName] || longName;
+}
+
 // Local, Hub-repo-hosted event art — used only when the selected All
 // Industries issue IS that event's own issue (matched by URL slug or kind).
 // Every other issue (ordinary weekly issues and the fallback view) uses a
@@ -149,7 +170,7 @@ function pickCardData(issues) {
     mode: 'choose-your-edition-fallback',
     date: (first && first.week) || `Week of ${newestDate}`,
     headline: "This week's Industry Editions",
-    stories: top3.map((i) => `${i.edition}: ${i.title}`),
+    stories: top3.map((i) => `${shortName(i.edition)}: ${i.title}`),
     link: 'https://nfratello.github.io/microsoft-brief/brief/latest/',
     image,
   };
